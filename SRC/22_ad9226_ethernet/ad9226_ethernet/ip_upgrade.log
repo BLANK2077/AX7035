@@ -1,0 +1,100 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Sep 18 16:37:05 2018
+| Host         : PC-201805041311 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'video_pll'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of video_pll (xilinx.com:ip:clk_wiz:5.4 (Rev. 3)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Sep 18 16:37:02 2018
+| Host         : PC-201805041311 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'rxd_clk'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of rxd_clk (xilinx.com:ip:clk_wiz:5.4 (Rev. 3)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Sep 18 16:36:59 2018
+| Host         : PC-201805041311 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_200M'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of clk_200M (xilinx.com:ip:clk_wiz:5.4 (Rev. 3)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Sep 18 16:36:56 2018
+| Host         : PC-201805041311 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'afifo_64i_16o_128'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of afifo_64i_16o_128 (xilinx.com:ip:fifo_generator:13.2 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Sep 18 16:36:55 2018
+| Host         : PC-201805041311 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'afifo_16i_64o_512'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of afifo_16i_64o_512 (xilinx.com:ip:fifo_generator:13.2 (Rev. 1)) to Vivado generation flows.
+

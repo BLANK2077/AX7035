@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="afifo_16i_64o_512_synth_1" LaunchDir="D:/AX7035/23_ad9280_ethernet/ad9280_ethernet/ad9280_ethernet.runs/afifo_16i_64o_512_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="afifo_64i_16o_128_synth_1" LaunchDir="D:/AX7035/23_ad9280_ethernet/ad9280_ethernet/ad9280_ethernet.runs/afifo_64i_16o_128_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_200M_synth_1" LaunchDir="D:/AX7035/23_ad9280_ethernet/ad9280_ethernet/ad9280_ethernet.runs/clk_200M_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="rxd_clk_synth_1" LaunchDir="D:/AX7035/23_ad9280_ethernet/ad9280_ethernet/ad9280_ethernet.runs/rxd_clk_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_pll_synth_1" LaunchDir="D:/AX7035/23_ad9280_ethernet/ad9280_ethernet/ad9280_ethernet.runs/video_pll_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

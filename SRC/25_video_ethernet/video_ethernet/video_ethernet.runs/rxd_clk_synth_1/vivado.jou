@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Sep 18 15:14:37 2018
+# Process ID: 2356
+# Current directory: D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/rxd_clk_synth_1
+# Command line: vivado.exe -log rxd_clk.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rxd_clk.tcl
+# Log file: D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/rxd_clk_synth_1/rxd_clk.vds
+# Journal file: D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/rxd_clk_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rxd_clk.tcl -notrace

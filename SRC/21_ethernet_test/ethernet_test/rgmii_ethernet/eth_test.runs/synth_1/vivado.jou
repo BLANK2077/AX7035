@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep 17 12:52:25 2018
+# Process ID: 5980
+# Current directory: D:/AX7035/19_ethernet_1g/ethernet_test/rgmii_ethernet/eth_test.runs/synth_1
+# Command line: vivado.exe -log ethernet_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ethernet_test.tcl
+# Log file: D:/AX7035/19_ethernet_1g/ethernet_test/rgmii_ethernet/eth_test.runs/synth_1/ethernet_test.vds
+# Journal file: D:/AX7035/19_ethernet_1g/ethernet_test/rgmii_ethernet/eth_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ethernet_test.tcl -notrace

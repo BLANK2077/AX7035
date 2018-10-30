@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ila_0_synth_1" LaunchDir="D:/demo_ax7035/demo_ax7035/22_USB_speed_test/usb_test/usb_test.runs/ila_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ft_buf_synth_1" LaunchDir="D:/demo_ax7035/demo_ax7035/22_USB_speed_test/usb_test/usb_test.runs/ft_buf_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_wiz_0_synth_1" LaunchDir="D:/demo_ax7035/demo_ax7035/22_USB_speed_test/usb_test/usb_test.runs/clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/demo_ax7035/demo_ax7035/22_USB_speed_test/usb_test/usb_test.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ila_0_synth_1"/>
+		<Parent Id="ft_buf_synth_1"/>
+		<Parent Id="clk_wiz_0_synth_1"/>
+	</Run>
+</Runs>
+

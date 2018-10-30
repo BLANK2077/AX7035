@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar 14 16:59:35 2018
+# Process ID: 10748
+# Current directory: D:/demo_ax7035/demo_ax7035/smg_interface_demo/smg_interface_demo/smg_interface_demo.runs/synth_1
+# Command line: vivado.exe -log smg_interface_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source smg_interface_demo.tcl
+# Log file: D:/demo_ax7035/demo_ax7035/smg_interface_demo/smg_interface_demo/smg_interface_demo.runs/synth_1/smg_interface_demo.vds
+# Journal file: D:/demo_ax7035/demo_ax7035/smg_interface_demo/smg_interface_demo/smg_interface_demo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source smg_interface_demo.tcl -notrace

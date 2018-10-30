@@ -1,0 +1,1319 @@
+
+*** Running vivado
+    with args -log video_ethernet.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source video_ethernet.tcl -notrace
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source video_ethernet.tcl -notrace
+Command: link_design -top video_ethernet -part xc7a35tfgg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'd:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo.dcp' for cell 'camera_fifo_inst'
+INFO: [Netlist 29-17] Analyzing 466 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo.xdc] for cell 'camera_fifo_inst/U0'
+Finished Parsing XDC File [d:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo.xdc] for cell 'camera_fifo_inst/U0'
+Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc]
+WARNING: [Vivado 12-508] No pins matched 'rxd_clk_m0/inst/mmcm_adv_inst/CLKOUT0'. [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:136]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:136]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins rxd_clk_m0/inst/mmcm_adv_inst/CLKOUT0]'. [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:136]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:136]
+get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1202.449 ; gain = 565.578
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks -of_objects [get_pins rxd_clk_m0/inst/mmcm_adv_inst/CLKOUT0]]'. [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:136]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo.dcp'
+Parsing XDC File [d:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo_clocks.xdc] for cell 'camera_fifo_inst/U0'
+Finished Parsing XDC File [d:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo_clocks.xdc] for cell 'camera_fifo_inst/U0'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+11 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1202.449 ; gain = 906.137
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port e_mdio expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 1 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.646 . Memory (MB): peak = 1202.449 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 13e85c654
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.291 . Memory (MB): peak = 1202.449 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 6 cells and removed 7 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 89909959
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.394 . Memory (MB): peak = 1202.449 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 95445be6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.506 . Memory (MB): peak = 1202.449 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 28 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG cmos_select_inst/cmos_pclk_BUFG_inst to drive 130 load(s) on clock net cmos_pclk
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 969115bb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.594 . Memory (MB): peak = 1202.449 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 1 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 969115bb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.669 . Memory (MB): peak = 1202.449 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1202.449 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 969115bb
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.725 . Memory (MB): peak = 1202.449 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.663 | TNS=-7.284 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 1 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: 11116c51f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.196 . Memory (MB): peak = 1375.914 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 11116c51f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1375.914 ; gain = 173.465
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1375.914 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file video_ethernet_drc_opted.rpt -pb video_ethernet_drc_opted.pb -rpx video_ethernet_drc_opted.rpx
+Command: report_drc -file video_ethernet_drc_opted.rpt -pb video_ethernet_drc_opted.pb -rpx video_ethernet_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENBWREN (net: camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENB_I) which is driven by a register (mac_test0/fifo_rd_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[10] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[6]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[11] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[7]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[4] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[0]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[5] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[1]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[6] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[2]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[7] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[3]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[8] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[4]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[9] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[5]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[10] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][6]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[11] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][7]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[4] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][0]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[5] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][1]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[6] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][2]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[7] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][3]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[8] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][4]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[9] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][5]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ENARDEN (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_wr_en_reg) which is driven by a register (mac_test0/mac_top0/icmp0/ram_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port e_mdio expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 19 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1375.914 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b10eb262
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1375.914 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d34acf5b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 19e2c09f5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 19e2c09f5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1375.914 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 19e2c09f5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 23f554430
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 23f554430
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 16f8a29d3
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 177840365
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 14c42d6c5
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 14c42d6c5
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 19aea19e4
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 21cf6d968
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 1e46942b1
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 1e46942b1
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 1e46942b1
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.914 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1e46942b1
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 24036cfe4
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-33] Processed net mac_test0/mac_top0/udp_tx_data_reg[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-31] BUFG insertion identified 1 candidate nets, 0 success, 1 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 24036cfe4
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1375.914 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.416. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 23a5a6be9
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1375.914 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 23a5a6be9
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 23a5a6be9
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 23a5a6be9
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1bffc992f
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1375.914 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1bffc992f
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1375.914 ; gain = 0.000
+Ending Placer Task | Checksum: dfdb0403
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1375.914 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+58 Infos, 22 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1375.914 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.310 . Memory (MB): peak = 1375.914 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file video_ethernet_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1375.914 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file video_ethernet_utilization_placed.rpt -pb video_ethernet_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1375.914 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file video_ethernet_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1375.914 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 84f5236d ConstDB: 0 ShapeSum: 5ae5e096 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 11e650057
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1375.914 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 575ec458 NumContArr: c7063bff Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 11e650057
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 11e650057
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 11e650057
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1375.914 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1d3e4e026
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1375.914 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.874 | TNS=-1.440 | WHS=-1.187 | THS=-223.157|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 209256400
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1375.914 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.874 | TNS=-5.720 | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1fba57c6d
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1375.914 ; gain = 0.000
+Phase 2 Router Initialization | Checksum: 2389100ef
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 25a49571d
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1375.914 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 535
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.651 | TNS=-4.354 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 19829a9a2
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1384.711 ; gain = 8.797
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.655 | TNS=-4.358 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 10feeb689
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1384.711 ; gain = 8.797
+Phase 4 Rip-up And Reroute | Checksum: 10feeb689
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1384.711 ; gain = 8.797
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 11b33406c
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1384.711 ; gain = 8.797
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.651 | TNS=-4.354 | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 157980920
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1384.711 ; gain = 8.797
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 157980920
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1384.711 ; gain = 8.797
+Phase 5 Delay and Skew Optimization | Checksum: 157980920
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1384.711 ; gain = 8.797
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 17fcf2bee
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 1384.711 ; gain = 8.797
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.627 | TNS=-6.721 | WHS=-1.951 | THS=-21.543|
+
+
+Phase 6.1.2 Lut RouteThru Assignment for hold
+Phase 6.1.2 Lut RouteThru Assignment for hold | Checksum: 162c2f8df
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:43 . Memory (MB): peak = 1974.785 ; gain = 598.871
+Phase 6.1 Hold Fix Iter | Checksum: 162c2f8df
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:43 . Memory (MB): peak = 1974.785 ; gain = 598.871
+
+Phase 6.2 Additional Hold Fix
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-5.034 | TNS=-9.760 | WHS=-1.580 | THS=-6.452 |
+
+Phase 6.2 Additional Hold Fix | Checksum: 1162a35ba
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:43 . Memory (MB): peak = 1974.785 ; gain = 598.871
+WARNING: [Route 35-468] The router encountered 4 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	cmos_select_inst/cmos_href_d0_i_1/I0
+	cmos_select_inst/camera_fifo_inst_i_1/I0
+	cmos_select_inst/camera_fifo_inst_i_1/I2
+	cmos_select_inst/cmos_href_d0_i_1/I2
+
+Phase 6 Post Hold Fix | Checksum: c77211d3
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:43 . Memory (MB): peak = 1974.785 ; gain = 598.871
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.42908 %
+  Global Horizontal Routing Utilization  = 1.54659 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 37.8378%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 52.2523%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 42.6471%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 47.0588%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 165241fe3
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:43 . Memory (MB): peak = 1974.785 ; gain = 598.871
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 165241fe3
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:43 . Memory (MB): peak = 1974.785 ; gain = 598.871
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 23bca7a7e
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:43 . Memory (MB): peak = 1974.785 ; gain = 598.871
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 2625394d8
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:43 . Memory (MB): peak = 1974.785 ; gain = 598.871
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-5.034 | TNS=-9.760 | WHS=-0.493 | THS=-4.873 |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 2625394d8
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:43 . Memory (MB): peak = 1974.785 ; gain = 598.871
+WARNING: [Route 35-426] Router was unable to fix hold violation on unroutable pins. The router cannot add routing detours to improve hold time because the pins are part of one or more of the following unroutable types: partition pins, fixed routes and intra-site connections.
+Resolution: Run report_timing_summary to analyze the hold violations.
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:43 . Memory (MB): peak = 1974.785 ; gain = 598.871
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+77 Infos, 25 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:07 ; elapsed = 00:00:44 . Memory (MB): peak = 1974.785 ; gain = 598.871
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.417 . Memory (MB): peak = 1974.785 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file video_ethernet_drc_routed.rpt -pb video_ethernet_drc_routed.pb -rpx video_ethernet_drc_routed.rpx
+Command: report_drc -file video_ethernet_drc_routed.rpt -pb video_ethernet_drc_routed.pb -rpx video_ethernet_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file video_ethernet_methodology_drc_routed.rpt -pb video_ethernet_methodology_drc_routed.pb -rpx video_ethernet_methodology_drc_routed.rpx
+Command: report_methodology -file video_ethernet_methodology_drc_routed.rpt -pb video_ethernet_methodology_drc_routed.pb -rpx video_ethernet_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file video_ethernet_power_routed.rpt -pb video_ethernet_power_summary_routed.pb -rpx video_ethernet_power_routed.rpx
+Command: report_power -file video_ethernet_power_routed.rpt -pb video_ethernet_power_summary_routed.pb -rpx video_ethernet_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+89 Infos, 25 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file video_ethernet_route_status.rpt -pb video_ethernet_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file video_ethernet_timing_summary_routed.rpt -rpx video_ethernet_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file video_ethernet_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file video_ethernet_clock_utilization_routed.rpt
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 18 15:37:52 2018...
+
+*** Running vivado
+    with args -log video_ethernet.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source video_ethernet.tcl -notrace
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source video_ethernet.tcl -notrace
+Command: open_checkpoint video_ethernet_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 233.172 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 463 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-2356-PC-201805041311/dcp1/video_ethernet_early.xdc]
+Finished Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-2356-PC-201805041311/dcp1/video_ethernet_early.xdc]
+Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-2356-PC-201805041311/dcp1/video_ethernet.xdc]
+Finished Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-2356-PC-201805041311/dcp1/video_ethernet.xdc]
+Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-2356-PC-201805041311/dcp1/video_ethernet_late.xdc]
+Finished Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-2356-PC-201805041311/dcp1/video_ethernet_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.372 . Memory (MB): peak = 614.020 ; gain = 4.309
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.372 . Memory (MB): peak = 614.020 ; gain = 4.309
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4 (64-bit) build 2086221
+open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 614.281 ; gain = 388.305
+Command: write_bitstream -force video_ethernet.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENBWREN (net: camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENB_I) which is driven by a register (mac_test0/fifo_rd_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[10] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[6]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[11] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[7]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[4] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[0]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[5] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[1]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[6] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[2]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[7] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[3]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[8] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[4]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[9] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[5]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[10] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][6]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[11] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][7]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[4] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][0]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[5] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][1]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[6] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][2]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[7] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][3]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[8] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][4]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[9] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][5]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ENARDEN (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_wr_en_reg) which is driven by a register (mac_test0/mac_top0/icmp0/ram_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 3 net(s) have no routable loads. The problem bus(es) and/or net(s) are camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, and camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 19 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./video_ethernet.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+19 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1082.625 ; gain = 468.344
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 18 15:54:07 2018...
+
+*** Running vivado
+    with args -log video_ethernet.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source video_ethernet.tcl -notrace
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source video_ethernet.tcl -notrace
+Command: link_design -top video_ethernet -part xc7a35tfgg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'd:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo.dcp' for cell 'camera_fifo_inst'
+INFO: [Netlist 29-17] Analyzing 466 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo.xdc] for cell 'camera_fifo_inst/U0'
+Finished Parsing XDC File [d:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo.xdc] for cell 'camera_fifo_inst/U0'
+Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc]
+WARNING: [Vivado 12-508] No pins matched 'rxd_clk_m0/inst/mmcm_adv_inst/CLKOUT0'. [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:136]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:136]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_pins rxd_clk_m0/inst/mmcm_adv_inst/CLKOUT0]'. [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:136]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:136]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1203.203 ; gain = 565.469
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-to [get_clocks -of_objects [get_pins rxd_clk_m0/inst/mmcm_adv_inst/CLKOUT0]]'. [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc:136]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/constrs_1/new/video_ethernet.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo.dcp'
+Parsing XDC File [d:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo_clocks.xdc] for cell 'camera_fifo_inst/U0'
+Finished Parsing XDC File [d:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.srcs/sources_1/new/ip/camera_fifo/camera_fifo_clocks.xdc] for cell 'camera_fifo_inst/U0'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+11 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1203.203 ; gain = 906.813
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port e_mdio expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 1 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.591 . Memory (MB): peak = 1203.203 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 17f8dccfc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.293 . Memory (MB): peak = 1203.203 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 6 cells and removed 7 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 174fe75c4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.397 . Memory (MB): peak = 1203.203 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 94aa9e2d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.512 . Memory (MB): peak = 1203.203 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 28 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG cmos_select_inst/cmos_pclk_BUFG_inst to drive 130 load(s) on clock net cmos_pclk
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: acbda10c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.602 . Memory (MB): peak = 1203.203 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 1 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: acbda10c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.677 . Memory (MB): peak = 1203.203 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1203.203 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: acbda10c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.733 . Memory (MB): peak = 1203.203 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.013 | TNS=-7.984 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 1 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 1 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: 176c96fe4
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.206 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 176c96fe4
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1377.758 ; gain = 174.555
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1377.758 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file video_ethernet_drc_opted.rpt -pb video_ethernet_drc_opted.pb -rpx video_ethernet_drc_opted.rpx
+Command: report_drc -file video_ethernet_drc_opted.rpt -pb video_ethernet_drc_opted.pb -rpx video_ethernet_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENBWREN (net: camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENB_I) which is driven by a register (mac_test0/fifo_rd_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[10] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[6]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[11] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[7]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[4] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[0]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[5] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[1]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[6] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[2]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[7] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[3]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[8] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[4]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[9] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[5]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[10] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][6]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[11] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][7]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[4] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][0]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[5] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][1]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[6] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][2]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[7] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][3]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[8] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][4]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[9] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][5]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ENARDEN (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_wr_en_reg) which is driven by a register (mac_test0/mac_top0/icmp0/ram_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port e_mdio expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 19 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b10eb262
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1377.758 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a16274e9
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 17e7c7106
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 17e7c7106
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 17e7c7106
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 70b93306
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 70b93306
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 70352940
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: eb9249be
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: fbeaffe1
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: fbeaffe1
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 67075c13
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: fc978c04
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: f8858cb9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: f8858cb9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: f8858cb9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: f8858cb9
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 14c952185
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-33] Processed net mac_test0/mac_top0/udp_tx_data_reg[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-31] BUFG insertion identified 1 candidate nets, 0 success, 1 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 14c952185
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1377.758 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.850. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 2311a5f49
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 2311a5f49
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2311a5f49
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 2311a5f49
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1985efc32
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1985efc32
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Ending Placer Task | Checksum: df858d28
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1377.758 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+58 Infos, 22 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.315 . Memory (MB): peak = 1377.758 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file video_ethernet_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1377.758 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file video_ethernet_utilization_placed.rpt -pb video_ethernet_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1377.758 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file video_ethernet_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: c5281e80 ConstDB: 0 ShapeSum: 1a5d6ea8 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 130de959d
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Post Restoration Checksum: NetGraph: b328e8ee NumContArr: 7db5acaf Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 130de959d
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 130de959d
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 130de959d
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1377.758 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 120694d12
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1377.758 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.856 | TNS=-3.418 | WHS=-1.078 | THS=-225.263|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 850962e8
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1377.758 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.856 | TNS=-7.012 | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 7e63ffde
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Phase 2 Router Initialization | Checksum: d7034fbd
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 13737deec
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 551
+ Number of Nodes with overlaps = 36
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.392 | TNS=-3.989 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1142fbaa5
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.392 | TNS=-3.989 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1849c689d
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 1849c689d
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 2278d4af1
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1377.758 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.392 | TNS=-3.989 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 25a5e1dff
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 25a5e1dff
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1377.758 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 25a5e1dff
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1377.758 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1cd4ffa3b
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:22 . Memory (MB): peak = 1377.758 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.898 | TNS=-7.317 | WHS=-2.201 | THS=-27.025|
+
+
+Phase 6.1.2 Lut RouteThru Assignment for hold
+Phase 6.1.2 Lut RouteThru Assignment for hold | Checksum: e6960471
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:45 . Memory (MB): peak = 2024.051 ; gain = 646.293
+Phase 6.1 Hold Fix Iter | Checksum: e6960471
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:45 . Memory (MB): peak = 2024.051 ; gain = 646.293
+
+Phase 6.2 Additional Hold Fix
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-6.742 | TNS=-11.766| WHS=-2.020 | THS=-13.448|
+
+Phase 6.2 Additional Hold Fix | Checksum: 1e05e62ed
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:45 . Memory (MB): peak = 2024.051 ; gain = 646.293
+WARNING: [Route 35-468] The router encountered 4 pins that are both setup-critical and hold-critical and tried to fix hold violations at the expense of setup slack. Such pins are:
+	cmos_select_inst/cmos_href_d0_i_1/I0
+	cmos_select_inst/camera_fifo_inst_i_1/I0
+	cmos_select_inst/camera_fifo_inst_i_1/I2
+	cmos_select_inst/cmos_href_d0_i_1/I2
+
+Phase 6 Post Hold Fix | Checksum: 2594415b4
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:45 . Memory (MB): peak = 2024.051 ; gain = 646.293
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.4581 %
+  Global Horizontal Routing Utilization  = 1.51861 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 44.1441%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 45.9459%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 54.4118%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 54.4118%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1f9eae614
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:45 . Memory (MB): peak = 2024.051 ; gain = 646.293
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1f9eae614
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:45 . Memory (MB): peak = 2024.051 ; gain = 646.293
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 17762c43f
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:45 . Memory (MB): peak = 2024.051 ; gain = 646.293
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 16b8cd75d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:45 . Memory (MB): peak = 2024.051 ; gain = 646.293
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-6.742 | TNS=-12.010| WHS=-0.777 | THS=-7.699 |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 16b8cd75d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:45 . Memory (MB): peak = 2024.051 ; gain = 646.293
+WARNING: [Route 35-426] Router was unable to fix hold violation on unroutable pins. The router cannot add routing detours to improve hold time because the pins are part of one or more of the following unroutable types: partition pins, fixed routes and intra-site connections.
+Resolution: Run report_timing_summary to analyze the hold violations.
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:45 . Memory (MB): peak = 2024.051 ; gain = 646.293
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+77 Infos, 25 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:14 ; elapsed = 00:00:46 . Memory (MB): peak = 2024.051 ; gain = 646.293
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.412 . Memory (MB): peak = 2024.051 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file video_ethernet_drc_routed.rpt -pb video_ethernet_drc_routed.pb -rpx video_ethernet_drc_routed.rpx
+Command: report_drc -file video_ethernet_drc_routed.rpt -pb video_ethernet_drc_routed.pb -rpx video_ethernet_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file video_ethernet_methodology_drc_routed.rpt -pb video_ethernet_methodology_drc_routed.pb -rpx video_ethernet_methodology_drc_routed.rpx
+Command: report_methodology -file video_ethernet_methodology_drc_routed.rpt -pb video_ethernet_methodology_drc_routed.pb -rpx video_ethernet_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/video_ethernet_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file video_ethernet_power_routed.rpt -pb video_ethernet_power_summary_routed.pb -rpx video_ethernet_power_routed.rpx
+Command: report_power -file video_ethernet_power_routed.rpt -pb video_ethernet_power_summary_routed.pb -rpx video_ethernet_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+89 Infos, 25 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file video_ethernet_route_status.rpt -pb video_ethernet_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file video_ethernet_timing_summary_routed.rpt -rpx video_ethernet_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file video_ethernet_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file video_ethernet_clock_utilization_routed.rpt
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 18 16:20:43 2018...
+
+*** Running vivado
+    with args -log video_ethernet.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source video_ethernet.tcl -notrace
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source video_ethernet.tcl -notrace
+Command: open_checkpoint video_ethernet_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 232.520 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 463 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-8068-PC-201805041311/dcp1/video_ethernet_early.xdc]
+Finished Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-8068-PC-201805041311/dcp1/video_ethernet_early.xdc]
+Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-8068-PC-201805041311/dcp1/video_ethernet.xdc]
+Finished Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-8068-PC-201805041311/dcp1/video_ethernet.xdc]
+Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-8068-PC-201805041311/dcp1/video_ethernet_late.xdc]
+Finished Parsing XDC File [D:/AX7035/24_video_ethernet/video_ethernet/video_ethernet.runs/impl_1/.Xil/Vivado-8068-PC-201805041311/dcp1/video_ethernet_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.389 . Memory (MB): peak = 613.773 ; gain = 4.480
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.389 . Memory (MB): peak = 613.773 ; gain = 4.480
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4 (64-bit) build 2086221
+open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 614.039 ; gain = 388.070
+Command: write_bitstream -force video_ethernet.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ENBWREN (net: camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENB_I) which is driven by a register (mac_test0/fifo_rd_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[10] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[6]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[11] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[7]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[4] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[0]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[5] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[1]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[6] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[2]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[7] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[3]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[8] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[4]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRARDADDR[9] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/Q[5]) which is driven by a register (mac_test0/mac_top0/icmp0/ram_write_addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[10] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][6]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[11] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][7]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[4] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][0]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[5] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][1]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[6] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][2]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[7] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][3]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[8] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][4]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ADDRBWRADDR[9] (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/icmp_rec_ram_read_addr_reg[7][5]) which is driven by a register (mac_test0/mac_top0/icmp0/icmp_rec_ram_read_addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg has an input control pin mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_reg/ENARDEN (net: mac_test0/mac_top0/icmp0/icmp_receive_ram/ram_wr_en_reg) which is driven by a register (mac_test0/mac_top0/icmp0/ram_wr_en_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 3 net(s) have no routable loads. The problem bus(es) and/or net(s) are camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/ENA_dly_D, camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, and camera_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 19 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./video_ethernet.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+19 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1081.184 ; gain = 467.145
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 18 16:22:33 2018...

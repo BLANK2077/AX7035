@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar 30 12:06:12 2018
+# Process ID: 9264
+# Current directory: D:/demo_ax7035/21_temp_lm75_test/temp_lm75_test/temp_lm75_test.runs/synth_1
+# Command line: vivado.exe -log temp_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source temp_test.tcl
+# Log file: D:/demo_ax7035/21_temp_lm75_test/temp_lm75_test/temp_lm75_test.runs/synth_1/temp_test.vds
+# Journal file: D:/demo_ax7035/21_temp_lm75_test/temp_lm75_test/temp_lm75_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source temp_test.tcl -notrace

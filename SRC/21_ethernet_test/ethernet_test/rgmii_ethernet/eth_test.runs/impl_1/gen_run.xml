@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tfgg484-1" LaunchTime="1537259423">
+  <File Type="ROUTE-PWR" Name="ethernet_test_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="ethernet_test.tcl"/>
+  <File Type="PWROPT-DCP" Name="ethernet_test_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="ethernet_test_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="ethernet_test_reports.tcl"/>
+  <File Type="BG-DRC" Name="ethernet_test.drc"/>
+  <File Type="OPT-HWDEF" Name="ethernet_test.hwdef"/>
+  <File Type="OPT-DCP" Name="ethernet_test_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ethernet_test_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="ethernet_test_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ethernet_test_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ethernet_test_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ethernet_test_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ethernet_test_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ethernet_test_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ethernet_test_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="ethernet_test_physopt.dcp"/>
+  <File Type="BG-BIT" Name="ethernet_test.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ethernet_test_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ethernet_test_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ethernet_test_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ethernet_test_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ethernet_test_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="ethernet_test_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="ethernet_test.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ethernet_test_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="ethernet_test.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ethernet_test_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="ethernet_test.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ethernet_test_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="ethernet_test.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="ethernet_test_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ethernet_test_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ethernet_test_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ethernet_test_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ethernet_test_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ethernet_test_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="ethernet_test_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="ethernet_test.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ethernet_test_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ethernet_test_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="ethernet_test.nky"/>
+  <File Type="BITSTR-BMM" Name="ethernet_test_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ethernet_test.mmi"/>
+  <File Type="BITSTR-LTX" Name="ethernet_test.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="ethernet_test.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/icmp_rx_ram_8_256/icmp_rx_ram_8_256.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/udp_rx_ram_8_2048/udp_rx_ram_8_2048.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/arp_cache.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/rx/arp_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/tx/arp_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/debouce/ax_debounce.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/crc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/rtl/crc.v"/>
+        <Attr Name="ImportTime" Val="1484401073"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/icmp_reply.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/rx/ip_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/tx/ip_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/tx/ip_tx_mode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/rx/mac_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/rx/mac_rx_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/mac_test.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/mac_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/tx/mac_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/tx/mac_tx_mode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/tx/mac_tx_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reset.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/rx/udp_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/tx/udp_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/util_gmii_to_rgmii.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/util_gmii_to_rgmii.v"/>
+        <Attr Name="ImportTime" Val="1473334880"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/miim/miim_types.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/miim/miim_types.vhd"/>
+        <Attr Name="ImportTime" Val="1473387494"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/miim/miim_types.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/miim/utility.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/miim/utility.vhd"/>
+        <Attr Name="ImportTime" Val="1472090589"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/miim/utility.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/miim/miim.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/miim/miim_registers.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/miim/miim_registers.vhd"/>
+        <Attr Name="ImportTime" Val="1473392566"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/miim/miim_registers.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/miim/miim_control.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/miim/miim_top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/ethernet_test.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/src/ethernet_test.v"/>
+        <Attr Name="ImportTime" Val="1501408378"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mdio/mdio_com.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mdio/phy_reg_config.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/mac/crc.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ethernet_test"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/top.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="udp_tx_data_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="udp_checksum_fifo"/>
+</GenRun>

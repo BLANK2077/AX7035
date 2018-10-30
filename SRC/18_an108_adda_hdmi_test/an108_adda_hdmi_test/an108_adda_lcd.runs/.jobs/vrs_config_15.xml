@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="da_rom_synth_1" LaunchDir="D:/demo_AX7050/demo_ax7050/an108_adda_hdmi_test/an108_adda_lcd.runs/da_rom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

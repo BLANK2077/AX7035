@@ -1,0 +1,31 @@
+$date
+        2017-Dec-19 20:00:28
+$end
+$version
+        Vivado v2017.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " ft_rd_n_OBUF $end
+$var reg 1 # ft_wr_n_OBUF $end
+$var reg 1 $ ft_oe_n_OBUF_1 $end
+$var reg 1 % ft_oe_n_OBUF $end
+$var reg 1 & p_0_in $end
+$var reg 1 ' _TRIGGER $end
+$var reg 1 ( _WINDOW $end
+$var reg 1 ) _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1"
+1#
+1$
+1%
+0&
+1'
+1(
+0)
+$end
