@@ -1,0 +1,88 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Mar 20 17:55:33 2018
+| Host         : ALINX000008-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    88 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              91 |           31 |
+| No           | No                    | Yes                    |             110 |           32 |
+| No           | Yes                   | No                     |              69 |           24 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             146 |           47 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+-----------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+|         Clock Signal        |                    Enable Signal                    |                         Set/Reset Signal                         | Slice Load Count | Bel Load Count |
++-----------------------------+-----------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+|  adc_pll_m0/inst/clk_out1   |                                                     | ad9226_sample_m0/sample_cnt[9]_i_3_n_0                           |                1 |              2 |
+|  video_pll_m0/inst/clk_out1 |                                                     | wav_display_m0/v_data[14]_i_1_n_0                                |                1 |              4 |
+|  video_pll_m0/inst/clk_out1 |                                                     | wav_display_m1/v_data[14]_i_1_n_0                                |                2 |              4 |
+|  video_pll_m0/inst/clk_out1 |                                                     | rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                2 |              6 |
+|  video_pll_m0/inst/clk_out1 |                                                     | grid_display_m0/timing_gen_xy_m0/SR[0]                           |                3 |              9 |
+|  video_pll_m0/inst/clk_out1 |                                                     | wav_display_m0/timing_gen_xy_m0/SR[0]                            |                2 |             10 |
+|  video_pll_m0/inst/clk_out1 |                                                     | wav_display_m1/timing_gen_xy_m0/SR[0]                            |                2 |             10 |
+|  adc_pll_m0/inst/clk_out1   | ad9226_sample_m1/sample_cnt[9]_i_1__0_n_0           | ad9226_sample_m1/rst0                                            |                3 |             11 |
+|  adc_pll_m0/inst/clk_out1   | ad9226_sample_m0/sample_cnt[9]_i_1_n_0              | ad9226_sample_m0/sample_cnt[9]_i_3_n_0                           |                3 |             11 |
+|  video_pll_m0/inst/clk_out1 | wav_display_m0/timing_gen_xy_m0/y_cnt[0]_i_1__0_n_0 | ad9226_sample_m1/rst0                                            |                3 |             12 |
+|  video_pll_m0/inst/clk_out1 | color_bar_m0/active_x[11]_i_1_n_0                   | color_bar_m0/h_cnt_reg[11]_0                                     |                4 |             12 |
+|  video_pll_m0/inst/clk_out1 | color_bar_m0/v_cnt                                  | color_bar_m0/h_cnt_reg[11]_0                                     |                4 |             12 |
+|  video_pll_m0/inst/clk_out1 | grid_display_m0/timing_gen_xy_m0/y_cnt[0]_i_1_n_0   | color_bar_m0/h_cnt_reg[11]_0                                     |                3 |             12 |
+|  video_pll_m0/inst/clk_out1 | wav_display_m1/timing_gen_xy_m0/y_cnt[0]_i_1__1_n_0 | ad9226_sample_m1/rst0                                            |                3 |             12 |
+|  video_pll_m0/inst/clk_out1 |                                                     | ad9226_sample_m1/rst0                                            |                6 |             24 |
+|  video_pll_m0/inst/clk_out1 |                                                     | rgb2dvi_m0/DataEncoders[0].DataEncoder/SR[0]                     |               12 |             26 |
+|  adc_pll_m0/inst/clk_out1   | ad9226_sample_m0/wait_cnt[31]_i_1_n_0               | ad9226_sample_m0/sample_cnt[9]_i_3_n_0                           |               13 |             32 |
+|  adc_pll_m0/inst/clk_out1   | ad9226_sample_m1/wait_cnt[31]_i_1__0_n_0            | ad9226_sample_m1/rst0                                            |               11 |             32 |
+|  video_pll_m0/inst/clk_out1 |                                                     | color_bar_m0/h_cnt_reg[11]_0                                     |               10 |             34 |
+|  adc_pll_m0/inst/clk_out1   |                                                     | ad9226_sample_m1/rst0                                            |               15 |             50 |
+|  video_pll_m0/inst/clk_out1 |                                                     |                                                                  |               34 |            100 |
++-----------------------------+-----------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 4      |                     2 |
+| 6      |                     1 |
+| 9      |                     1 |
+| 10     |                     2 |
+| 11     |                     2 |
+| 12     |                     5 |
+| 16+    |                     7 |
++--------+-----------------------+
+
+

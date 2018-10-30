@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jan 17 10:51:56 2018
+# Process ID: 9180
+# Current directory: D:/demo_ax7035/demo_ax7035/sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/afifo_32i_64o_256_synth_1
+# Command line: vivado.exe -log afifo_32i_64o_256.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source afifo_32i_64o_256.tcl
+# Log file: D:/demo_ax7035/demo_ax7035/sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/afifo_32i_64o_256_synth_1/afifo_32i_64o_256.vds
+# Journal file: D:/demo_ax7035/demo_ax7035/sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/afifo_32i_64o_256_synth_1\vivado.jou
+#-----------------------------------------------------------
+source afifo_32i_64o_256.tcl -notrace

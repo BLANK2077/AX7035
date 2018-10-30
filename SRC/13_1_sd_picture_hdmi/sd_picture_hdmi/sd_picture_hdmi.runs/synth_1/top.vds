@@ -1,0 +1,1415 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Sep 20 10:54:02 2018
+# Process ID: 6804
+# Current directory: F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/top.vds
+# Journal file: F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1200 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 437.871 ; gain = 99.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:29]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clk_200M' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/realtime/clk_200M_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_200M' (1#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/realtime/clk_200M_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'video_pll' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'video_pll' (2#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'sd_card_bmp' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card_bmp.v:29]
+INFO: [Synth 8-638] synthesizing module 'ax_debounce' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/ax_debounce.v:32]
+	Parameter N bound to: 32 - type: integer 
+	Parameter FREQ bound to: 50 - type: integer 
+	Parameter MAX_TIME bound to: 20 - type: integer 
+	Parameter TIMER_MAX_VAL bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ax_debounce' (3#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/ax_debounce.v:32]
+INFO: [Synth 8-638] synthesizing module 'bmp_read' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/bmp_read.v:28]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_FIND bound to: 1 - type: integer 
+	Parameter S_READ_WAIT bound to: 2 - type: integer 
+	Parameter S_READ bound to: 3 - type: integer 
+	Parameter S_END bound to: 4 - type: integer 
+	Parameter HEADER_SIZE bound to: 54 - type: integer 
+WARNING: [Synth 8-5788] Register width_reg in module bmp_read is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/bmp_read.v:114]
+INFO: [Synth 8-256] done synthesizing module 'bmp_read' (4#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/bmp_read.v:28]
+INFO: [Synth 8-638] synthesizing module 'sd_card_top' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card/sd_card_top.v:29]
+	Parameter SPI_LOW_SPEED_DIV bound to: 248 - type: integer 
+	Parameter SPI_HIGH_SPEED_DIV bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sd_card_sec_read_write' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card/sd_card_sec_read_write.v:29]
+	Parameter SPI_LOW_SPEED_DIV bound to: 248 - type: integer 
+	Parameter SPI_HIGH_SPEED_DIV bound to: 0 - type: integer 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_CMD0 bound to: 1 - type: integer 
+	Parameter S_CMD8 bound to: 2 - type: integer 
+	Parameter S_CMD55 bound to: 3 - type: integer 
+	Parameter S_CMD41 bound to: 4 - type: integer 
+	Parameter S_CMD17 bound to: 5 - type: integer 
+	Parameter S_READ bound to: 6 - type: integer 
+	Parameter S_CMD24 bound to: 7 - type: integer 
+	Parameter S_WRITE bound to: 8 - type: integer 
+	Parameter S_ERR bound to: 14 - type: integer 
+	Parameter S_WRITE_END bound to: 15 - type: integer 
+	Parameter S_READ_END bound to: 16 - type: integer 
+	Parameter S_WAIT_READ_WRITE bound to: 17 - type: integer 
+	Parameter S_CMD16 bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sd_card_sec_read_write' (5#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card/sd_card_sec_read_write.v:29]
+INFO: [Synth 8-638] synthesizing module 'sd_card_cmd' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card/sd_card_cmd.v:32]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_WAIT bound to: 1 - type: integer 
+	Parameter S_INIT bound to: 2 - type: integer 
+	Parameter S_CMD_PRE bound to: 3 - type: integer 
+	Parameter S_CMD bound to: 4 - type: integer 
+	Parameter S_CMD_DATA bound to: 5 - type: integer 
+	Parameter S_READ_WAIT bound to: 6 - type: integer 
+	Parameter S_READ bound to: 7 - type: integer 
+	Parameter S_READ_ACK bound to: 8 - type: integer 
+	Parameter S_WRITE_TOKEN bound to: 9 - type: integer 
+	Parameter S_WRITE_DATA_0 bound to: 10 - type: integer 
+	Parameter S_WRITE_DATA_1 bound to: 11 - type: integer 
+	Parameter S_WRITE_CRC bound to: 12 - type: integer 
+	Parameter S_WRITE_SUC bound to: 13 - type: integer 
+	Parameter S_WRITE_BUSY bound to: 14 - type: integer 
+	Parameter S_WRITE_ACK bound to: 15 - type: integer 
+	Parameter S_ERR bound to: 16 - type: integer 
+	Parameter S_END bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sd_card_cmd' (6#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card/sd_card_cmd.v:32]
+INFO: [Synth 8-638] synthesizing module 'spi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card/spi_master.v:29]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter DCLK_EDGE bound to: 1 - type: integer 
+	Parameter DCLK_IDLE bound to: 2 - type: integer 
+	Parameter ACK bound to: 3 - type: integer 
+	Parameter LAST_HALF_CYCLE bound to: 4 - type: integer 
+	Parameter ACK_WAIT bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'spi_master' (7#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card/spi_master.v:29]
+INFO: [Synth 8-256] done synthesizing module 'sd_card_top' (8#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card/sd_card_top.v:29]
+INFO: [Synth 8-256] done synthesizing module 'sd_card_bmp' (9#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card_bmp.v:29]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/rgb2dvi.vhd:89]
+	Parameter kGenerateSerialClk bound to: 0 - type: bool 
+	Parameter kClkPrimitive bound to: MMCM - type: string 
+	Parameter kClkRange bound to: 1 - type: integer 
+	Parameter kRstActiveHigh bound to: 1 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/SyncAsyncReset.vhd:72]
+	Parameter kPolarity bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/SyncAsyncReset.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b1 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/SyncAsync.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (10#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (11#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'OutputSERDES' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/OutputSERDES.vhd:76]
+	Parameter kParallelWidth bound to: 10 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OutputBuffer' to cell 'OBUFDS' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/OutputSERDES.vhd:83]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerMaster' to cell 'OSERDESE2' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/OutputSERDES.vhd:92]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerSlave' to cell 'OSERDESE2' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/OutputSERDES.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'OutputSERDES' (12#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/OutputSERDES.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Encoder' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Encoder' (13#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'rgb2dvi' (14#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/rgb2dvi.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'video_timing_data' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/video_timing_data.v:30]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'color_bar' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/color_bar.v:33]
+	Parameter H_ACTIVE bound to: 16'b0000010000000000 
+	Parameter H_FP bound to: 16'b0000000000011000 
+	Parameter H_SYNC bound to: 16'b0000000010001000 
+	Parameter H_BP bound to: 16'b0000000010100000 
+	Parameter V_ACTIVE bound to: 16'b0000001100000000 
+	Parameter V_FP bound to: 16'b0000000000000011 
+	Parameter V_SYNC bound to: 16'b0000000000000110 
+	Parameter V_BP bound to: 16'b0000000000011101 
+	Parameter HS_POL bound to: 1'b0 
+	Parameter VS_POL bound to: 1'b0 
+	Parameter H_TOTAL bound to: 16'b0000010101000000 
+	Parameter V_TOTAL bound to: 16'b0000001100100110 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+INFO: [Synth 8-256] done synthesizing module 'color_bar' (15#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/color_bar.v:33]
+WARNING: [Synth 8-5788] Register video_hs_d1_reg in module video_timing_data is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/video_timing_data.v:59]
+WARNING: [Synth 8-5788] Register video_vs_d1_reg in module video_timing_data is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/video_timing_data.v:60]
+WARNING: [Synth 8-5788] Register video_de_d1_reg in module video_timing_data is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/video_timing_data.v:61]
+INFO: [Synth 8-256] done synthesizing module 'video_timing_data' (16#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/video_timing_data.v:30]
+INFO: [Synth 8-638] synthesizing module 'frame_read_write' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/frame_read_write.v:31]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter READ_DATA_BITS bound to: 32 - type: integer 
+	Parameter WRITE_DATA_BITS bound to: 32 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+	Parameter BURST_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'afifo_32i_64o_256' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/realtime/afifo_32i_64o_256_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'afifo_32i_64o_256' (17#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/realtime/afifo_32i_64o_256_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'rd_data_count' does not match port width (7) of module 'afifo_32i_64o_256' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/frame_read_write.v:96]
+INFO: [Synth 8-638] synthesizing module 'frame_fifo_write' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/frame_fifo_write.v:31]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+	Parameter BURST_SIZE bound to: 64 - type: integer 
+	Parameter ONE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ZERO bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_ACK bound to: 1 - type: integer 
+	Parameter S_CHECK_FIFO bound to: 2 - type: integer 
+	Parameter S_WRITE_BURST bound to: 3 - type: integer 
+	Parameter S_WRITE_BURST_END bound to: 4 - type: integer 
+	Parameter S_END bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frame_fifo_write' (18#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/frame_fifo_write.v:31]
+INFO: [Synth 8-638] synthesizing module 'afifo_64i_32o_128' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/realtime/afifo_64i_32o_128_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'afifo_64i_32o_128' (19#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/realtime/afifo_64i_32o_128_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'wr_data_count' does not match port width (7) of module 'afifo_64i_32o_128' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/frame_read_write.v:143]
+INFO: [Synth 8-638] synthesizing module 'frame_fifo_read' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/frame_fifo_read.v:31]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 25 - type: integer 
+	Parameter BUSRT_BITS bound to: 10 - type: integer 
+	Parameter FIFO_DEPTH bound to: 128 - type: integer 
+	Parameter BURST_SIZE bound to: 64 - type: integer 
+	Parameter ONE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ZERO bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_ACK bound to: 1 - type: integer 
+	Parameter S_CHECK_FIFO bound to: 2 - type: integer 
+	Parameter S_READ_BURST bound to: 3 - type: integer 
+	Parameter S_READ_BURST_END bound to: 4 - type: integer 
+	Parameter S_END bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frame_fifo_read' (20#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/frame_fifo_read.v:31]
+INFO: [Synth 8-256] done synthesizing module 'frame_read_write' (21#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/frame_read_write.v:31]
+INFO: [Synth 8-638] synthesizing module 'ddr3' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/realtime/ddr3_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ddr3' (22#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/realtime/ddr3_stub.v:5]
+WARNING: [Synth 8-689] width (64) of port connection 's_axi_awaddr' does not match port width (28) of module 'ddr3' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:328]
+WARNING: [Synth 8-689] width (64) of port connection 's_axi_araddr' does not match port width (28) of module 'ddr3' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:351]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_arlock' does not match port width (1) of module 'ddr3' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:355]
+WARNING: [Synth 8-350] instance 'u_ddr3' of module 'ddr3' requires 66 connections, but only 65 given [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:296]
+INFO: [Synth 8-638] synthesizing module 'aq_axi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/aq_axi_master.v:39]
+	Parameter S_WR_IDLE bound to: 3'b000 
+	Parameter S_WA_WAIT bound to: 3'b001 
+	Parameter S_WA_START bound to: 3'b010 
+	Parameter S_WD_WAIT bound to: 3'b011 
+	Parameter S_WD_PROC bound to: 3'b100 
+	Parameter S_WR_WAIT bound to: 3'b101 
+	Parameter S_WR_DONE bound to: 3'b110 
+	Parameter S_RD_IDLE bound to: 3'b000 
+	Parameter S_RA_WAIT bound to: 3'b001 
+	Parameter S_RA_START bound to: 3'b010 
+	Parameter S_RD_WAIT bound to: 3'b011 
+	Parameter S_RD_PROC bound to: 3'b100 
+	Parameter S_RD_DONE bound to: 3'b101 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/aq_axi_master.v:311]
+WARNING: [Synth 8-6014] Unused sequential element reg_w_stb_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/aq_axi_master.v:179]
+WARNING: [Synth 8-6014] Unused sequential element reg_wr_status_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/aq_axi_master.v:180]
+WARNING: [Synth 8-6014] Unused sequential element reg_w_count_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/aq_axi_master.v:181]
+WARNING: [Synth 8-6014] Unused sequential element reg_r_count_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/aq_axi_master.v:182]
+WARNING: [Synth 8-6014] Unused sequential element wr_chkdata_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/aq_axi_master.v:183]
+WARNING: [Synth 8-6014] Unused sequential element rd_chkdata_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/aq_axi_master.v:184]
+WARNING: [Synth 8-6014] Unused sequential element resp_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/aq_axi_master.v:185]
+WARNING: [Synth 8-5788] Register reg_r_last_reg in module aq_axi_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/aq_axi_master.v:331]
+INFO: [Synth 8-256] done synthesizing module 'aq_axi_master' (23#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/aq_axi_master.v:39]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_AWID' does not match port width (1) of module 'aq_axi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:377]
+WARNING: [Synth 8-689] width (64) of port connection 'M_AXI_AWADDR' does not match port width (32) of module 'aq_axi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:378]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_BID' does not match port width (1) of module 'aq_axi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:395]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_ARID' does not match port width (1) of module 'aq_axi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:400]
+WARNING: [Synth 8-689] width (64) of port connection 'M_AXI_ARADDR' does not match port width (32) of module 'aq_axi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:401]
+WARNING: [Synth 8-689] width (4) of port connection 'M_AXI_RID' does not match port width (1) of module 'aq_axi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:412]
+WARNING: [Synth 8-689] width (28) of port connection 'WR_ADRS' does not match port width (32) of module 'aq_axi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:421]
+WARNING: [Synth 8-689] width (13) of port connection 'WR_LEN' does not match port width (32) of module 'aq_axi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:422]
+WARNING: [Synth 8-689] width (28) of port connection 'RD_ADRS' does not match port width (32) of module 'aq_axi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:430]
+WARNING: [Synth 8-689] width (13) of port connection 'RD_LEN' does not match port width (32) of module 'aq_axi_master' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:431]
+WARNING: [Synth 8-3848] Net s00_axi_buser in module/entity top does not have driver. [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:136]
+WARNING: [Synth 8-3848] Net s00_axi_ruser in module/entity top does not have driver. [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:157]
+INFO: [Synth 8-256] done synthesizing module 'top' (24#1) [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/top.v:29]
+WARNING: [Synth 8-3917] design top has port HDMI_OEN[0] driven by constant 1
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design frame_fifo_write has unconnected port wr_burst_data_req
+WARNING: [Synth 8-3331] design TMDS_Encoder has unconnected port SerialClk
+WARNING: [Synth 8-3331] design TMDS_Encoder has unconnected port aRst
+WARNING: [Synth 8-3331] design rgb2dvi has unconnected port aRst_n
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 496.016 ; gain = 157.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin sd_card_top_m0:sd_sec_write_data[7] to constant 0 [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card_bmp.v:88]
+WARNING: [Synth 8-3295] tying undriven pin sd_card_top_m0:sd_sec_write_data[6] to constant 0 [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card_bmp.v:88]
+WARNING: [Synth 8-3295] tying undriven pin sd_card_top_m0:sd_sec_write_data[5] to constant 0 [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card_bmp.v:88]
+WARNING: [Synth 8-3295] tying undriven pin sd_card_top_m0:sd_sec_write_data[4] to constant 0 [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card_bmp.v:88]
+WARNING: [Synth 8-3295] tying undriven pin sd_card_top_m0:sd_sec_write_data[3] to constant 0 [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card_bmp.v:88]
+WARNING: [Synth 8-3295] tying undriven pin sd_card_top_m0:sd_sec_write_data[2] to constant 0 [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card_bmp.v:88]
+WARNING: [Synth 8-3295] tying undriven pin sd_card_top_m0:sd_sec_write_data[1] to constant 0 [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card_bmp.v:88]
+WARNING: [Synth 8-3295] tying undriven pin sd_card_top_m0:sd_sec_write_data[0] to constant 0 [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card_bmp.v:88]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 496.016 ; gain = 157.844
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc] for cell 'u_ddr3'
+Finished Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc] for cell 'u_ddr3'
+Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp6/clk_200M_in_context.xdc] for cell 'clk_ref_m0'
+Finished Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp6/clk_200M_in_context.xdc] for cell 'clk_ref_m0'
+Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp7/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Finished Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp7/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp8/afifo_32i_64o_256_in_context.xdc] for cell 'frame_read_write_m0/write_buf'
+Finished Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp8/afifo_32i_64o_256_in_context.xdc] for cell 'frame_read_write_m0/write_buf'
+Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp9/afifo_64i_32o_128_in_context.xdc] for cell 'frame_read_write_m0/read_buf'
+Finished Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp9/afifo_64i_32o_128_in_context.xdc] for cell 'frame_read_write_m0/read_buf'
+Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/constrs_1/new/sd_picture_hdmi.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/constrs_1/new/sd_picture_hdmi.xdc:10]
+Finished Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/constrs_1/new/sd_picture_hdmi.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/constrs_1/new/sd_picture_hdmi.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 840.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 840.516 ; gain = 502.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 840.516 ; gain = 502.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_n[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_p[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cs_n[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cs_n[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp5/ddr3_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp6/clk_200M_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/.Xil/Vivado-6804-PC-201805041311/dcp6/clk_200M_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for clk_ref_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for frame_read_write_m0/read_buf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for frame_read_write_m0/write_buf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ddr3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_pll_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 840.516 ; gain = 502.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "button_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bmp_read'
+INFO: [Synth 8-5546] ROM "header_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "header_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "file_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "file_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "file_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "file_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "width" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "width" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "width" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "width" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bmp_len_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_code" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_card_sec_read_write'
+INFO: [Synth 8-5546] ROM "block_read_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "block_write_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_card_cmd'
+INFO: [Synth 8-5546] ROM "spi_wr_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spi_wr_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spi_wr_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spi_wr_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wr_data_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cmd_req_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_div" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'spi_master'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element clk_cnt_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card/spi_master.v:122]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:96]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:96]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:96]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:96]
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'frame_fifo_write'
+INFO: [Synth 8-5544] ROM "write_finish" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "write_req_ack" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_aclr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'frame_fifo_read'
+INFO: [Synth 8-5544] ROM "read_finish" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_req_ack" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_aclr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'aq_axi_master'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'aq_axi_master'
+INFO: [Synth 8-5546] ROM "M_AXI_WLAST" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_w_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "WR_READY" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_w_last" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RD_READY" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reg_r_last" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                             0000
+                  S_FIND |                              001 |                             0001
+             S_READ_WAIT |                              010 |                             0010
+                  S_READ |                              011 |                             0011
+                   S_END |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bmp_read'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0000 |                            00000
+                  S_CMD0 |                             0001 |                            00001
+                  S_CMD8 |                             0010 |                            00010
+                 S_CMD55 |                             0011 |                            00011
+                 S_CMD41 |                             0100 |                            00100
+                 S_CMD16 |                             0101 |                            10010
+       S_WAIT_READ_WRITE |                             0110 |                            10001
+                 S_CMD24 |                             0111 |                            00111
+                 S_WRITE |                             1001 |                            01000
+             S_WRITE_END |                             1010 |                            01111
+                 S_CMD17 |                             1000 |                            00101
+                  S_READ |                             1011 |                            00110
+              S_READ_END |                             1100 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sd_card_sec_read_write'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                            00000 |                            00000
+                  S_INIT |                            00001 |                            00010
+                  S_WAIT |                            00010 |                            00001
+               S_CMD_PRE |                            00011 |                            00011
+                   S_CMD |                            00110 |                            00100
+                   S_ERR |                            00111 |                            10000
+              S_CMD_DATA |                            01000 |                            00101
+                   S_END |                            01001 |                            10001
+             S_READ_WAIT |                            00100 |                            00110
+                  S_READ |                            01010 |                            00111
+              S_READ_ACK |                            01011 |                            01000
+           S_WRITE_TOKEN |                            00101 |                            01001
+          S_WRITE_DATA_0 |                            01100 |                            01010
+          S_WRITE_DATA_1 |                            01101 |                            01011
+             S_WRITE_CRC |                            01110 |                            01100
+             S_WRITE_SUC |                            01111 |                            01101
+            S_WRITE_BUSY |                            10000 |                            01110
+             S_WRITE_ACK |                            10001 |                            01111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sd_card_cmd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+               DCLK_IDLE |                              001 |                              010
+               DCLK_EDGE |                              010 |                              001
+         LAST_HALF_CYCLE |                              011 |                              100
+                     ACK |                              100 |                              011
+                ACK_WAIT |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'spi_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                             0000
+                   S_ACK |                              001 |                             0001
+            S_CHECK_FIFO |                              010 |                             0010
+           S_WRITE_BURST |                              011 |                             0011
+       S_WRITE_BURST_END |                              100 |                             0100
+                   S_END |                              101 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'frame_fifo_write'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                             0000
+                   S_ACK |                              001 |                             0001
+            S_CHECK_FIFO |                              010 |                             0010
+            S_READ_BURST |                              011 |                             0011
+        S_READ_BURST_END |                              100 |                             0100
+                   S_END |                              101 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'frame_fifo_read'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               S_WR_IDLE |                              000 |                              000
+               S_WA_WAIT |                              001 |                              001
+              S_WA_START |                              010 |                              010
+               S_WD_WAIT |                              011 |                              011
+               S_WD_PROC |                              100 |                              100
+               S_WR_WAIT |                              101 |                              101
+               S_WR_DONE |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'sequential' in module 'aq_axi_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               S_RD_IDLE |                              000 |                              000
+               S_RA_WAIT |                              001 |                              001
+              S_RA_START |                              010 |                              010
+               S_RD_WAIT |                              011 |                              011
+               S_RD_PROC |                              100 |                              100
+               S_RD_DONE |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'sequential' in module 'aq_axi_master'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 840.516 ; gain = 502.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
+	   2 Input     25 Bit       Adders := 4     
+	   2 Input     21 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 4     
+	   3 Input      5 Bit       Adders := 9     
+	   4 Input      5 Bit       Adders := 3     
+	   8 Input      4 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 43    
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 12    
+	               25 Bit    Registers := 10    
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 7     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 15    
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 70    
++---Muxes : 
+	  13 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 12    
+	   3 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 4     
+	   4 Input     25 Bit        Muxes := 2     
+	   6 Input     25 Bit        Muxes := 4     
+	   2 Input     24 Bit        Muxes := 3     
+	  13 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 5     
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 11    
+	  16 Input     10 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 7     
+	  13 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	  22 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 10    
+	   5 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 4     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 66    
+	   5 Input      1 Bit        Muxes := 5     
+	  13 Input      1 Bit        Muxes := 9     
+	  16 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 25    
+	   7 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ax_debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module bmp_read 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   3 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 15    
+	   5 Input      1 Bit        Muxes := 5     
+Module sd_card_sec_read_write 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  13 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 2     
+	  13 Input      8 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  13 Input      1 Bit        Muxes := 9     
+Module sd_card_cmd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	  22 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+	  16 Input      1 Bit        Muxes := 11    
+Module spi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
+Module SyncAsync 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module TMDS_Encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 3     
+	   4 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+Module color_bar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	  10 Input      1 Bit        Muxes := 1     
+Module video_timing_data 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module frame_fifo_write 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 2     
++---Registers : 
+	               25 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     25 Bit        Muxes := 1     
+	   6 Input     25 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 10    
+Module frame_fifo_read 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 2     
++---Registers : 
+	               25 Bit    Registers := 5     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     25 Bit        Muxes := 1     
+	   6 Input     25 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 10    
+Module aq_axi_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     21 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	   7 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element ax_debounce_m0/button_posedge_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/ax_debounce.v:105]
+INFO: [Synth 8-5545] ROM "ax_debounce_m0/button_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "bmp_read_m0/file_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bmp_read_m0/file_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bmp_read_m0/file_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bmp_read_m0/file_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bmp_read_m0/header_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bmp_read_m0/header_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bmp_read_m0/width" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bmp_read_m0/width" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bmp_read_m0/width" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bmp_read_m0/width" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sd_card_top_m0/sd_card_cmd_m0/spi_wr_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sd_card_top_m0/sd_card_cmd_m0/spi_wr_req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sd_card_top_m0/sd_card_cmd_m0/spi_wr_req" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element sd_card_top_m0/spi_master_m0/clk_cnt_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/sd_card/spi_master.v:122]
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pC1_1_reg' into 'DataEncoders[1].DataEncoder/pC0_1_reg' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pC1_2_reg' into 'DataEncoders[1].DataEncoder/pC0_2_reg' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pVde_1_reg' into 'DataEncoders[0].DataEncoder/pVde_1_reg' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pVde_2_reg' into 'DataEncoders[0].DataEncoder/pVde_2_reg' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:150]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC0_1_reg' into 'DataEncoders[1].DataEncoder/pC0_1_reg' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:114]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC0_2_reg' into 'DataEncoders[1].DataEncoder/pC0_2_reg' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:148]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC1_1_reg' into 'DataEncoders[1].DataEncoder/pC0_1_reg' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC1_2_reg' into 'DataEncoders[1].DataEncoder/pC0_2_reg' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pVde_1_reg' into 'DataEncoders[0].DataEncoder/pVde_1_reg' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pVde_2_reg' into 'DataEncoders[0].DataEncoder/pVde_2_reg' [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:150]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[1].DataEncoder/pC1_1_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[1].DataEncoder/pC1_2_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[1].DataEncoder/pVde_1_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[1].DataEncoder/pVde_2_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:150]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pC0_1_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pC0_2_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:148]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pC1_1_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pC1_2_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pVde_1_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pVde_2_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/src/TMDS_Encoder.vhd:150]
+WARNING: [Synth 8-6014] Unused sequential element color_bar_m0/active_x_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/color_bar.v:218]
+WARNING: [Synth 8-6014] Unused sequential element color_bar_m0/rgb_r_reg_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/color_bar.v:186]
+WARNING: [Synth 8-6014] Unused sequential element color_bar_m0/rgb_g_reg_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/color_bar.v:187]
+WARNING: [Synth 8-6014] Unused sequential element color_bar_m0/rgb_b_reg_reg was removed.  [F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.srcs/sources_1/src/color_bar.v:188]
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_bar_m0/v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_bar_m0/h_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_w_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "M_AXI_WLAST" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design top has port HDMI_OEN[0] driven by constant 1
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design aq_axi_master has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design rgb2dvi has unconnected port aRst_n
+INFO: [Synth 8-3886] merging instance 'sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[0]' (FDCE) to 'sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[7]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[0]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[1]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[2]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[3]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[4]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[5]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[6]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[7]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[8]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[9]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[10]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[11]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[12]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[13]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[14]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[15]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[16]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[17]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[18]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[18]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[18]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[19]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[20]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[21]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[22]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[23]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d0_reg[24]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[0]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[1]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[2]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[3]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[4]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[5]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[6]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[7]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[8]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[9]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[10]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[11]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[12]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[13]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[14]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[15]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[16]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[17]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[18]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[19]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[20]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[21]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[22]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[23]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d0_reg[24]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[41]' (FDCE) to 'sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/cmd_reg[42]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[0]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[1]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[2]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[3]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[4]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[5]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[6]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[7]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[8]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[9]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[10]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[11]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[12]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[13]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[14]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[15]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[16]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[17]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[18]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[19]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[20]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[21]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[22]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[23]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_read_m0/read_len_d1_reg[24]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[0]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[1]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[2]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[3]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[4]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[5]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[6]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[7]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[8]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[9]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[10]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[11]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[12]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[13]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[14]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[15]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[16]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[17]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[19]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[20]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[21]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[22]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[23]' (FDC) to 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'frame_read_write_m0/frame_fifo_write_m0/write_len_d1_reg[24]' (FDC) to 'frame_read_write_m0/frame_fifo_read_m0/read_addr_index_d1_reg[1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m0/frame_fifo_read_m0/rd_burst_len_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m0/frame_fifo_write_m0/wr_burst_len_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sd_card_bmp_m0/bmp_read_m0/state_code_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg )
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/width_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/bmp_read_m0/state_code_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/spi_clk_div_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/sd_card_top_m0/sd_card_cmd_m0/clk_div_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/cmd_r1_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[0].DataEncoder/cnt_t_3_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[1].DataEncoder/cnt_t_3_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[2].DataEncoder/cnt_t_3_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_timing_data_m0/vout_data_r_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_timing_data_m0/vout_data_r_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_timing_data_m0/vout_data_r_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_timing_data_m0/vout_data_r_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_timing_data_m0/vout_data_r_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_timing_data_m0/vout_data_r_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_timing_data_m0/vout_data_r_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (video_timing_data_m0/vout_data_r_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_addr_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_len_latch_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/wr_burst_len_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_cnt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_addr_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/read_len_latch_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_read_m0/rd_burst_len_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (frame_read_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_len_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_len_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_len_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_wr_adrs_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_len_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_len_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_len_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_aq_axi_master/reg_rd_adrs_reg[0]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 840.516 ; gain = 502.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_ddr3/ui_clk' to pin 'u_ddr3/bbstub_ui_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_ref_m0/clk_out1' to pin 'clk_ref_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll_m0/clk_out1' to pin 'video_pll_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll_m0/clk_out2' to pin 'video_pll_m0/bbstub_clk_out2/O'
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 840.516 ; gain = 502.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 848.742 ; gain = 510.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 886.086 ; gain = 547.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 886.086 ; gain = 547.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 886.086 ; gain = 547.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 886.086 ; gain = 547.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 886.086 ; gain = 547.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 886.086 ; gain = 547.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 886.086 ; gain = 547.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------+----------+
+|      |BlackBox name     |Instances |
++------+------------------+----------+
+|1     |clk_200M          |         1|
+|2     |video_pll         |         1|
+|3     |ddr3              |         1|
+|4     |afifo_32i_64o_256 |         1|
+|5     |afifo_64i_32o_128 |         1|
++------+------------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |afifo_32i_64o_256 |     1|
+|2     |afifo_64i_32o_128 |     1|
+|3     |clk_200M          |     1|
+|4     |ddr3              |     1|
+|5     |video_pll         |     1|
+|6     |CARRY4            |   115|
+|7     |LUT1              |    61|
+|8     |LUT2              |   162|
+|9     |LUT3              |   244|
+|10    |LUT4              |   236|
+|11    |LUT5              |   157|
+|12    |LUT6              |   298|
+|13    |MUXF7             |     4|
+|14    |OSERDESE2         |     4|
+|15    |OSERDESE2_1       |     4|
+|16    |FDCE              |   662|
+|17    |FDPE              |    20|
+|18    |FDRE              |   137|
+|19    |FDSE              |    15|
+|20    |IBUF              |     3|
+|21    |OBUF              |     8|
+|22    |OBUFDS            |     4|
++------+------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-----------------------+------+
+|      |Instance                             |Module                 |Cells |
++------+-------------------------------------+-----------------------+------+
+|1     |top                                  |                       |  2398|
+|2     |  frame_read_write_m0                |frame_read_write       |   387|
+|3     |    frame_fifo_read_m0               |frame_fifo_read        |   128|
+|4     |    frame_fifo_write_m0              |frame_fifo_write       |   129|
+|5     |  rgb2dvi_m0                         |rgb2dvi                |   350|
+|6     |    ClockSerializer                  |OutputSERDES           |     3|
+|7     |    \DataEncoders[0].DataEncoder     |TMDS_Encoder           |   118|
+|8     |    \DataEncoders[0].DataSerializer  |OutputSERDES_0         |     3|
+|9     |    \DataEncoders[1].DataEncoder     |TMDS_Encoder_1         |   108|
+|10    |    \DataEncoders[1].DataSerializer  |OutputSERDES_2         |     3|
+|11    |    \DataEncoders[2].DataEncoder     |TMDS_Encoder_3         |   109|
+|12    |    \DataEncoders[2].DataSerializer  |OutputSERDES_4         |     3|
+|13    |    LockLostReset                    |ResetBridge            |     3|
+|14    |      SyncAsyncx                     |SyncAsync              |     2|
+|15    |  sd_card_bmp_m0                     |sd_card_bmp            |   960|
+|16    |    ax_debounce_m0                   |ax_debounce            |    92|
+|17    |    bmp_read_m0                      |bmp_read               |   412|
+|18    |    sd_card_top_m0                   |sd_card_top            |   456|
+|19    |      sd_card_cmd_m0                 |sd_card_cmd            |   192|
+|20    |      sd_card_sec_read_write_m0      |sd_card_sec_read_write |   161|
+|21    |      spi_master_m0                  |spi_master             |   103|
+|22    |  u_aq_axi_master                    |aq_axi_master          |   417|
+|23    |  video_timing_data_m0               |video_timing_data      |   139|
+|24    |    color_bar_m0                     |color_bar              |    81|
++------+-------------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 886.086 ; gain = 547.914
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 115 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 886.086 ; gain = 203.414
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 886.086 ; gain = 547.914
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 126 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+287 Infos, 167 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 886.086 ; gain = 547.914
+INFO: [Common 17-1381] The checkpoint 'F:/demo_ax7035/demo_ax7035/13_1_sd_picture_hdmi/sd_picture_hdmi/sd_picture_hdmi.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 886.086 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 20 10:55:02 2018...

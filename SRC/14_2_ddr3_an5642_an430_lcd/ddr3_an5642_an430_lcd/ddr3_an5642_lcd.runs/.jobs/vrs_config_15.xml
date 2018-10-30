@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="sys_pll_synth_1" LaunchDir="D:/demo_AX7050/ddr3_ov5640_an430_lcd/ddr3_an5640_lcd.runs/sys_pll_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_pll_synth_1" LaunchDir="D:/demo_AX7050/ddr3_ov5640_an430_lcd/ddr3_an5640_lcd.runs/video_pll_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="afifo_16i_64o_512_synth_1" LaunchDir="D:/demo_AX7050/ddr3_ov5640_an430_lcd/ddr3_an5640_lcd.runs/afifo_16i_64o_512_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="afifo_64i_16o_128_synth_1" LaunchDir="D:/demo_AX7050/ddr3_ov5640_an430_lcd/ddr3_an5640_lcd.runs/afifo_64i_16o_128_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ddr3_synth_1" LaunchDir="D:/demo_AX7050/ddr3_ov5640_an430_lcd/ddr3_an5640_lcd.runs/ddr3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_200M_synth_1" LaunchDir="D:/demo_AX7050/ddr3_ov5640_an430_lcd/ddr3_an5640_lcd.runs/clk_200M_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/demo_AX7050/ddr3_ov5640_an430_lcd/ddr3_an5640_lcd.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="sys_pll_synth_1"/>
+		<Parent Id="video_pll_synth_1"/>
+		<Parent Id="afifo_16i_64o_512_synth_1"/>
+		<Parent Id="afifo_64i_16o_128_synth_1"/>
+		<Parent Id="ddr3_synth_1"/>
+		<Parent Id="clk_200M_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/demo_AX7050/ddr3_ov5640_an430_lcd/ddr3_an5640_lcd.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="sys_pll_synth_1"/>
+		<Parent Id="video_pll_synth_1"/>
+		<Parent Id="afifo_16i_64o_512_synth_1"/>
+		<Parent Id="afifo_64i_16o_128_synth_1"/>
+		<Parent Id="ddr3_synth_1"/>
+		<Parent Id="clk_200M_synth_1"/>
+	</Run>
+</Runs>
+

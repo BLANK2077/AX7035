@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Mar 29 10:12:46 2018
+# Process ID: 2224
+# Current directory: D:/demo_ax7035/demo_ax7035/11_sd_card_audio/sd_card_audio
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6304 D:\demo_ax7035\demo_ax7035\11_sd_card_audio\sd_card_audio\sd_card_audio.xpr
+# Log file: D:/demo_ax7035/demo_ax7035/11_sd_card_audio/sd_card_audio/vivado.log
+# Journal file: D:/demo_ax7035/demo_ax7035/11_sd_card_audio/sd_card_audio\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/demo_ax7035/demo_ax7035/11_sd_card_audio/sd_card_audio/sd_card_audio.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/demo_ax7035/demo_ax7035/11_sd_card_audio/sd_card_audio/sd_card_audio.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/demo_ax7035/demo_ax7035/11_sd_card_audio/sd_card_audio/sd_card_audio.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/demo_ax7035/demo_ax7035/11_sd_card_audio/sd_card_audio/sd_card_audio.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/demo_ax7035/demo_ax7035/11_sd_card_audio/sd_card_audio/sd_card_audio.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

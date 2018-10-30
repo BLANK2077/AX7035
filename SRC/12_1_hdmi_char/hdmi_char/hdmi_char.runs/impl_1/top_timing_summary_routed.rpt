@@ -1,0 +1,1541 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Mar 20 15:42:34 2018
+| Host         : ALINX000008-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx -warn_on_violation
+| Design       : top
+| Device       : 7a35t-fgg484
+| Speed File   : -1  PRODUCTION 1.20 2017-11-01
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 4 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     10.787        0.000                      0                  283        0.122        0.000                      0                  283        0.922        0.000                       0                   169  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                 Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                 ------------         ----------      --------------
+sys_clk               {0.000 10.000}       20.000          50.000          
+  clk_out1_video_pll  {0.000 7.692}        15.385          65.000          
+  clk_out2_video_pll  {0.000 1.538}        3.077           325.000         
+  clkfbout_video_pll  {0.000 10.000}       20.000          50.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk                                                                                                                                                                 7.000        0.000                       0                     1  
+  clk_out1_video_pll       10.787        0.000                      0                  283        0.122        0.000                      0                  283        6.712        0.000                       0                   155  
+  clk_out2_video_pll                                                                                                                                                    0.922        0.000                       0                    10  
+  clkfbout_video_pll                                                                                                                                                   17.845        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk
+  To Clock:  sys_clk
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { sys_clk }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         20.000      18.751     MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       20.000      80.000     MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000      MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000      MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000      MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000      MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_video_pll
+  To Clock:  clk_out1_video_pll
+
+Setup :            0  Failing Endpoints,  Worst Slack       10.787ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.122ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        6.712ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             10.787ns  (required time - arrival time)
+  Source:                 osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            osd_display_m0/v_data_reg[22]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            15.385ns  (clk_out1_video_pll rise@15.385ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        4.518ns  (logic 2.702ns (59.802%)  route 1.816ns (40.198%))
+  Logic Levels:           2  (LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.017ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.454ns = ( 13.931 - 15.385 ) 
+    Source Clock Delay      (SCD):    -0.875ns
+    Clock Pessimism Removal (CPR):    0.561ns
+  Clock Uncertainty:      0.091ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.167ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.496     1.496 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.729    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.965    -4.236 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.666    -2.569    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.473 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.598    -0.875    osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y34         RAMB18E1                                     r  osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y34         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.579 r  osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/DOADO[0]
+                         net (fo=1, routed)           1.119     2.698    osd_display_m0/q[0]
+    SLICE_X58Y86         LUT6 (Prop_lut6_I5_O)        0.124     2.822 r  osd_display_m0/v_data[22]_i_3/O
+                         net (fo=3, routed)           0.697     3.519    osd_display_m0/timing_gen_xy_m0/osd_x_reg[1]_0
+    SLICE_X58Y86         LUT5 (Prop_lut5_I1_O)        0.124     3.643 r  osd_display_m0/timing_gen_xy_m0/v_data[22]_i_1/O
+                         net (fo=1, routed)           0.000     3.643    osd_display_m0/timing_gen_xy_m0_n_5
+    SLICE_X58Y86         FDRE                                         r  osd_display_m0/v_data_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                     15.385    15.385 r  
+    Y18                                               0.000    15.385 r  sys_clk (IN)
+                         net (fo=0)                   0.000    15.385    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.425    16.810 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.162    17.972    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.221    10.750 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.587    12.337    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.428 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.503    13.931    osd_display_m0/clk_out1
+    SLICE_X58Y86         FDRE                                         r  osd_display_m0/v_data_reg[22]/C
+                         clock pessimism              0.561    14.492    
+                         clock uncertainty           -0.091    14.401    
+    SLICE_X58Y86         FDRE (Setup_fdre_C_D)        0.029    14.430    osd_display_m0/v_data_reg[22]
+  -------------------------------------------------------------------
+                         required time                         14.430    
+                         arrival time                          -3.643    
+  -------------------------------------------------------------------
+                         slack                                 10.787    
+
+Slack (MET) :             10.796ns  (required time - arrival time)
+  Source:                 osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            osd_display_m0/v_data_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            15.385ns  (clk_out1_video_pll rise@15.385ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        4.511ns  (logic 2.702ns (59.898%)  route 1.809ns (40.102%))
+  Logic Levels:           2  (LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.017ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.454ns = ( 13.931 - 15.385 ) 
+    Source Clock Delay      (SCD):    -0.875ns
+    Clock Pessimism Removal (CPR):    0.561ns
+  Clock Uncertainty:      0.091ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.167ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.496     1.496 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.729    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.965    -4.236 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.666    -2.569    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.473 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.598    -0.875    osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y34         RAMB18E1                                     r  osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y34         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.579 f  osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/DOADO[0]
+                         net (fo=1, routed)           1.119     2.698    osd_display_m0/q[0]
+    SLICE_X58Y86         LUT6 (Prop_lut6_I5_O)        0.124     2.822 f  osd_display_m0/v_data[22]_i_3/O
+                         net (fo=3, routed)           0.690     3.512    osd_display_m0/timing_gen_xy_m0/osd_x_reg[1]_0
+    SLICE_X58Y86         LUT5 (Prop_lut5_I1_O)        0.124     3.636 r  osd_display_m0/timing_gen_xy_m0/v_data[14]_i_1/O
+                         net (fo=1, routed)           0.000     3.636    osd_display_m0/timing_gen_xy_m0_n_4
+    SLICE_X58Y86         FDRE                                         r  osd_display_m0/v_data_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                     15.385    15.385 r  
+    Y18                                               0.000    15.385 r  sys_clk (IN)
+                         net (fo=0)                   0.000    15.385    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.425    16.810 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.162    17.972    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.221    10.750 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.587    12.337    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.428 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.503    13.931    osd_display_m0/clk_out1
+    SLICE_X58Y86         FDRE                                         r  osd_display_m0/v_data_reg[14]/C
+                         clock pessimism              0.561    14.492    
+                         clock uncertainty           -0.091    14.401    
+    SLICE_X58Y86         FDRE (Setup_fdre_C_D)        0.031    14.432    osd_display_m0/v_data_reg[14]
+  -------------------------------------------------------------------
+                         required time                         14.432    
+                         arrival time                          -3.636    
+  -------------------------------------------------------------------
+                         slack                                 10.796    
+
+Slack (MET) :             10.878ns  (required time - arrival time)
+  Source:                 osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            osd_display_m0/v_data_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            15.385ns  (clk_out1_video_pll rise@15.385ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        4.428ns  (logic 2.702ns (61.019%)  route 1.726ns (38.981%))
+  Logic Levels:           2  (LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.016ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.453ns = ( 13.932 - 15.385 ) 
+    Source Clock Delay      (SCD):    -0.875ns
+    Clock Pessimism Removal (CPR):    0.561ns
+  Clock Uncertainty:      0.091ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.167ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.496     1.496 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.729    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.965    -4.236 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.666    -2.569    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.473 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.598    -0.875    osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y34         RAMB18E1                                     r  osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y34         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     1.579 f  osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/DOADO[0]
+                         net (fo=1, routed)           1.119     2.698    osd_display_m0/q[0]
+    SLICE_X58Y86         LUT6 (Prop_lut6_I5_O)        0.124     2.822 f  osd_display_m0/v_data[22]_i_3/O
+                         net (fo=3, routed)           0.607     3.429    osd_display_m0/timing_gen_xy_m0/osd_x_reg[1]_0
+    SLICE_X58Y87         LUT5 (Prop_lut5_I1_O)        0.124     3.553 r  osd_display_m0/timing_gen_xy_m0/v_data[6]_i_1/O
+                         net (fo=1, routed)           0.000     3.553    osd_display_m0/timing_gen_xy_m0_n_3
+    SLICE_X58Y87         FDRE                                         r  osd_display_m0/v_data_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                     15.385    15.385 r  
+    Y18                                               0.000    15.385 r  sys_clk (IN)
+                         net (fo=0)                   0.000    15.385    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.425    16.810 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.162    17.972    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.221    10.750 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.587    12.337    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.428 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.504    13.932    osd_display_m0/clk_out1
+    SLICE_X58Y87         FDRE                                         r  osd_display_m0/v_data_reg[6]/C
+                         clock pessimism              0.561    14.493    
+                         clock uncertainty           -0.091    14.402    
+    SLICE_X58Y87         FDRE (Setup_fdre_C_D)        0.029    14.431    osd_display_m0/v_data_reg[6]
+  -------------------------------------------------------------------
+                         required time                         14.431    
+                         arrival time                          -3.553    
+  -------------------------------------------------------------------
+                         slack                                 10.878    
+
+Slack (MET) :             11.648ns  (required time - arrival time)
+  Source:                 color_bar_m0/h_cnt_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            color_bar_m0/v_cnt_reg[10]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            15.385ns  (clk_out1_video_pll rise@15.385ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        3.403ns  (logic 0.839ns (24.655%)  route 2.564ns (75.345%))
+  Logic Levels:           2  (LUT3=1 LUT6=1)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.451ns = ( 13.934 - 15.385 ) 
+    Source Clock Delay      (SCD):    -0.851ns
+    Clock Pessimism Removal (CPR):    0.561ns
+  Clock Uncertainty:      0.091ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.167ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.496     1.496 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.729    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.965    -4.236 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.666    -2.569    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.473 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.622    -0.851    color_bar_m0/clk_out1
+    SLICE_X62Y87         FDCE                                         r  color_bar_m0/h_cnt_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y87         FDCE (Prop_fdce_C_Q)         0.419    -0.432 f  color_bar_m0/h_cnt_reg[6]/Q
+                         net (fo=7, routed)           1.330     0.898    color_bar_m0/h_cnt_reg_n_0_[6]
+    SLICE_X64Y87         LUT6 (Prop_lut6_I3_O)        0.296     1.194 f  color_bar_m0/v_cnt[11]_i_4/O
+                         net (fo=2, routed)           0.586     1.780    color_bar_m0/v_cnt[11]_i_4_n_0
+    SLICE_X61Y87         LUT3 (Prop_lut3_I2_O)        0.124     1.904 r  color_bar_m0/v_cnt[11]_i_1/O
+                         net (fo=14, routed)          0.647     2.551    color_bar_m0/v_cnt
+    SLICE_X58Y90         FDCE                                         r  color_bar_m0/v_cnt_reg[10]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                     15.385    15.385 r  
+    Y18                                               0.000    15.385 r  sys_clk (IN)
+                         net (fo=0)                   0.000    15.385    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.425    16.810 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.162    17.972    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.221    10.750 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.587    12.337    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.428 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.506    13.934    color_bar_m0/clk_out1
+    SLICE_X58Y90         FDCE                                         r  color_bar_m0/v_cnt_reg[10]/C
+                         clock pessimism              0.561    14.495    
+                         clock uncertainty           -0.091    14.404    
+    SLICE_X58Y90         FDCE (Setup_fdce_C_CE)      -0.205    14.199    color_bar_m0/v_cnt_reg[10]
+  -------------------------------------------------------------------
+                         required time                         14.199    
+                         arrival time                          -2.551    
+  -------------------------------------------------------------------
+                         slack                                 11.648    
+
+Slack (MET) :             11.648ns  (required time - arrival time)
+  Source:                 color_bar_m0/h_cnt_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            color_bar_m0/v_cnt_reg[11]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            15.385ns  (clk_out1_video_pll rise@15.385ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        3.403ns  (logic 0.839ns (24.655%)  route 2.564ns (75.345%))
+  Logic Levels:           2  (LUT3=1 LUT6=1)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.451ns = ( 13.934 - 15.385 ) 
+    Source Clock Delay      (SCD):    -0.851ns
+    Clock Pessimism Removal (CPR):    0.561ns
+  Clock Uncertainty:      0.091ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.167ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.496     1.496 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.729    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.965    -4.236 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.666    -2.569    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.473 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.622    -0.851    color_bar_m0/clk_out1
+    SLICE_X62Y87         FDCE                                         r  color_bar_m0/h_cnt_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y87         FDCE (Prop_fdce_C_Q)         0.419    -0.432 f  color_bar_m0/h_cnt_reg[6]/Q
+                         net (fo=7, routed)           1.330     0.898    color_bar_m0/h_cnt_reg_n_0_[6]
+    SLICE_X64Y87         LUT6 (Prop_lut6_I3_O)        0.296     1.194 f  color_bar_m0/v_cnt[11]_i_4/O
+                         net (fo=2, routed)           0.586     1.780    color_bar_m0/v_cnt[11]_i_4_n_0
+    SLICE_X61Y87         LUT3 (Prop_lut3_I2_O)        0.124     1.904 r  color_bar_m0/v_cnt[11]_i_1/O
+                         net (fo=14, routed)          0.647     2.551    color_bar_m0/v_cnt
+    SLICE_X58Y90         FDCE                                         r  color_bar_m0/v_cnt_reg[11]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                     15.385    15.385 r  
+    Y18                                               0.000    15.385 r  sys_clk (IN)
+                         net (fo=0)                   0.000    15.385    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.425    16.810 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.162    17.972    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.221    10.750 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.587    12.337    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.428 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.506    13.934    color_bar_m0/clk_out1
+    SLICE_X58Y90         FDCE                                         r  color_bar_m0/v_cnt_reg[11]/C
+                         clock pessimism              0.561    14.495    
+                         clock uncertainty           -0.091    14.404    
+    SLICE_X58Y90         FDCE (Setup_fdce_C_CE)      -0.205    14.199    color_bar_m0/v_cnt_reg[11]
+  -------------------------------------------------------------------
+                         required time                         14.199    
+                         arrival time                          -2.551    
+  -------------------------------------------------------------------
+                         slack                                 11.648    
+
+Slack (MET) :             11.648ns  (required time - arrival time)
+  Source:                 color_bar_m0/h_cnt_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            color_bar_m0/v_cnt_reg[5]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            15.385ns  (clk_out1_video_pll rise@15.385ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        3.403ns  (logic 0.839ns (24.655%)  route 2.564ns (75.345%))
+  Logic Levels:           2  (LUT3=1 LUT6=1)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.451ns = ( 13.934 - 15.385 ) 
+    Source Clock Delay      (SCD):    -0.851ns
+    Clock Pessimism Removal (CPR):    0.561ns
+  Clock Uncertainty:      0.091ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.167ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.496     1.496 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.729    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.965    -4.236 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.666    -2.569    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.473 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.622    -0.851    color_bar_m0/clk_out1
+    SLICE_X62Y87         FDCE                                         r  color_bar_m0/h_cnt_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y87         FDCE (Prop_fdce_C_Q)         0.419    -0.432 f  color_bar_m0/h_cnt_reg[6]/Q
+                         net (fo=7, routed)           1.330     0.898    color_bar_m0/h_cnt_reg_n_0_[6]
+    SLICE_X64Y87         LUT6 (Prop_lut6_I3_O)        0.296     1.194 f  color_bar_m0/v_cnt[11]_i_4/O
+                         net (fo=2, routed)           0.586     1.780    color_bar_m0/v_cnt[11]_i_4_n_0
+    SLICE_X61Y87         LUT3 (Prop_lut3_I2_O)        0.124     1.904 r  color_bar_m0/v_cnt[11]_i_1/O
+                         net (fo=14, routed)          0.647     2.551    color_bar_m0/v_cnt
+    SLICE_X58Y90         FDCE                                         r  color_bar_m0/v_cnt_reg[5]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                     15.385    15.385 r  
+    Y18                                               0.000    15.385 r  sys_clk (IN)
+                         net (fo=0)                   0.000    15.385    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.425    16.810 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.162    17.972    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.221    10.750 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.587    12.337    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.428 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.506    13.934    color_bar_m0/clk_out1
+    SLICE_X58Y90         FDCE                                         r  color_bar_m0/v_cnt_reg[5]/C
+                         clock pessimism              0.561    14.495    
+                         clock uncertainty           -0.091    14.404    
+    SLICE_X58Y90         FDCE (Setup_fdce_C_CE)      -0.205    14.199    color_bar_m0/v_cnt_reg[5]
+  -------------------------------------------------------------------
+                         required time                         14.199    
+                         arrival time                          -2.551    
+  -------------------------------------------------------------------
+                         slack                                 11.648    
+
+Slack (MET) :             11.648ns  (required time - arrival time)
+  Source:                 color_bar_m0/h_cnt_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            color_bar_m0/v_cnt_reg[9]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            15.385ns  (clk_out1_video_pll rise@15.385ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        3.403ns  (logic 0.839ns (24.655%)  route 2.564ns (75.345%))
+  Logic Levels:           2  (LUT3=1 LUT6=1)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.451ns = ( 13.934 - 15.385 ) 
+    Source Clock Delay      (SCD):    -0.851ns
+    Clock Pessimism Removal (CPR):    0.561ns
+  Clock Uncertainty:      0.091ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.167ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.496     1.496 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.729    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.965    -4.236 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.666    -2.569    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.473 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.622    -0.851    color_bar_m0/clk_out1
+    SLICE_X62Y87         FDCE                                         r  color_bar_m0/h_cnt_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y87         FDCE (Prop_fdce_C_Q)         0.419    -0.432 f  color_bar_m0/h_cnt_reg[6]/Q
+                         net (fo=7, routed)           1.330     0.898    color_bar_m0/h_cnt_reg_n_0_[6]
+    SLICE_X64Y87         LUT6 (Prop_lut6_I3_O)        0.296     1.194 f  color_bar_m0/v_cnt[11]_i_4/O
+                         net (fo=2, routed)           0.586     1.780    color_bar_m0/v_cnt[11]_i_4_n_0
+    SLICE_X61Y87         LUT3 (Prop_lut3_I2_O)        0.124     1.904 r  color_bar_m0/v_cnt[11]_i_1/O
+                         net (fo=14, routed)          0.647     2.551    color_bar_m0/v_cnt
+    SLICE_X58Y90         FDCE                                         r  color_bar_m0/v_cnt_reg[9]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                     15.385    15.385 r  
+    Y18                                               0.000    15.385 r  sys_clk (IN)
+                         net (fo=0)                   0.000    15.385    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.425    16.810 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.162    17.972    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.221    10.750 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.587    12.337    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.428 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.506    13.934    color_bar_m0/clk_out1
+    SLICE_X58Y90         FDCE                                         r  color_bar_m0/v_cnt_reg[9]/C
+                         clock pessimism              0.561    14.495    
+                         clock uncertainty           -0.091    14.404    
+    SLICE_X58Y90         FDCE (Setup_fdce_C_CE)      -0.205    14.199    color_bar_m0/v_cnt_reg[9]
+  -------------------------------------------------------------------
+                         required time                         14.199    
+                         arrival time                          -2.551    
+  -------------------------------------------------------------------
+                         slack                                 11.648    
+
+Slack (MET) :             11.705ns  (required time - arrival time)
+  Source:                 color_bar_m0/h_cnt_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            color_bar_m0/active_x_reg[10]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            15.385ns  (clk_out1_video_pll rise@15.385ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        3.361ns  (logic 0.828ns (24.637%)  route 2.533ns (75.363%))
+  Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.023ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.450ns = ( 13.935 - 15.385 ) 
+    Source Clock Delay      (SCD):    -0.851ns
+    Clock Pessimism Removal (CPR):    0.575ns
+  Clock Uncertainty:      0.091ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.167ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.496     1.496 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.729    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.965    -4.236 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.666    -2.569    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.473 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.622    -0.851    color_bar_m0/clk_out1
+    SLICE_X62Y87         FDCE                                         r  color_bar_m0/h_cnt_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y87         FDCE (Prop_fdce_C_Q)         0.456    -0.395 r  color_bar_m0/h_cnt_reg[5]/Q
+                         net (fo=4, routed)           0.857     0.462    color_bar_m0/h_cnt_reg_n_0_[5]
+    SLICE_X64Y87         LUT3 (Prop_lut3_I2_O)        0.124     0.586 f  color_bar_m0/h_cnt[11]_i_5/O
+                         net (fo=3, routed)           0.683     1.269    color_bar_m0/h_cnt[11]_i_5_n_0
+    SLICE_X64Y87         LUT6 (Prop_lut6_I3_O)        0.124     1.393 r  color_bar_m0/active_x[11]_i_3/O
+                         net (fo=1, routed)           0.418     1.811    color_bar_m0/active_x[11]_i_3_n_0
+    SLICE_X64Y89         LUT5 (Prop_lut5_I0_O)        0.124     1.935 r  color_bar_m0/active_x[11]_i_1/O
+                         net (fo=12, routed)          0.575     2.509    color_bar_m0/active_x[11]_i_1_n_0
+    SLICE_X62Y90         FDCE                                         r  color_bar_m0/active_x_reg[10]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                     15.385    15.385 r  
+    Y18                                               0.000    15.385 r  sys_clk (IN)
+                         net (fo=0)                   0.000    15.385    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.425    16.810 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.162    17.972    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.221    10.750 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.587    12.337    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.428 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.507    13.935    color_bar_m0/clk_out1
+    SLICE_X62Y90         FDCE                                         r  color_bar_m0/active_x_reg[10]/C
+                         clock pessimism              0.575    14.510    
+                         clock uncertainty           -0.091    14.419    
+    SLICE_X62Y90         FDCE (Setup_fdce_C_CE)      -0.205    14.214    color_bar_m0/active_x_reg[10]
+  -------------------------------------------------------------------
+                         required time                         14.214    
+                         arrival time                          -2.509    
+  -------------------------------------------------------------------
+                         slack                                 11.705    
+
+Slack (MET) :             11.705ns  (required time - arrival time)
+  Source:                 color_bar_m0/h_cnt_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            color_bar_m0/active_x_reg[11]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            15.385ns  (clk_out1_video_pll rise@15.385ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        3.361ns  (logic 0.828ns (24.637%)  route 2.533ns (75.363%))
+  Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.023ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.450ns = ( 13.935 - 15.385 ) 
+    Source Clock Delay      (SCD):    -0.851ns
+    Clock Pessimism Removal (CPR):    0.575ns
+  Clock Uncertainty:      0.091ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.167ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.496     1.496 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.729    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.965    -4.236 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.666    -2.569    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.473 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.622    -0.851    color_bar_m0/clk_out1
+    SLICE_X62Y87         FDCE                                         r  color_bar_m0/h_cnt_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y87         FDCE (Prop_fdce_C_Q)         0.456    -0.395 r  color_bar_m0/h_cnt_reg[5]/Q
+                         net (fo=4, routed)           0.857     0.462    color_bar_m0/h_cnt_reg_n_0_[5]
+    SLICE_X64Y87         LUT3 (Prop_lut3_I2_O)        0.124     0.586 f  color_bar_m0/h_cnt[11]_i_5/O
+                         net (fo=3, routed)           0.683     1.269    color_bar_m0/h_cnt[11]_i_5_n_0
+    SLICE_X64Y87         LUT6 (Prop_lut6_I3_O)        0.124     1.393 r  color_bar_m0/active_x[11]_i_3/O
+                         net (fo=1, routed)           0.418     1.811    color_bar_m0/active_x[11]_i_3_n_0
+    SLICE_X64Y89         LUT5 (Prop_lut5_I0_O)        0.124     1.935 r  color_bar_m0/active_x[11]_i_1/O
+                         net (fo=12, routed)          0.575     2.509    color_bar_m0/active_x[11]_i_1_n_0
+    SLICE_X62Y90         FDCE                                         r  color_bar_m0/active_x_reg[11]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                     15.385    15.385 r  
+    Y18                                               0.000    15.385 r  sys_clk (IN)
+                         net (fo=0)                   0.000    15.385    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.425    16.810 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.162    17.972    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.221    10.750 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.587    12.337    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.428 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.507    13.935    color_bar_m0/clk_out1
+    SLICE_X62Y90         FDCE                                         r  color_bar_m0/active_x_reg[11]/C
+                         clock pessimism              0.575    14.510    
+                         clock uncertainty           -0.091    14.419    
+    SLICE_X62Y90         FDCE (Setup_fdce_C_CE)      -0.205    14.214    color_bar_m0/active_x_reg[11]
+  -------------------------------------------------------------------
+                         required time                         14.214    
+                         arrival time                          -2.509    
+  -------------------------------------------------------------------
+                         slack                                 11.705    
+
+Slack (MET) :             11.705ns  (required time - arrival time)
+  Source:                 color_bar_m0/h_cnt_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            color_bar_m0/active_x_reg[9]/CE
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            15.385ns  (clk_out1_video_pll rise@15.385ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        3.361ns  (logic 0.828ns (24.637%)  route 2.533ns (75.363%))
+  Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.023ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.450ns = ( 13.935 - 15.385 ) 
+    Source Clock Delay      (SCD):    -0.851ns
+    Clock Pessimism Removal (CPR):    0.575ns
+  Clock Uncertainty:      0.091ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.167ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.496     1.496 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.729    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.965    -4.236 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.666    -2.569    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.473 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.622    -0.851    color_bar_m0/clk_out1
+    SLICE_X62Y87         FDCE                                         r  color_bar_m0/h_cnt_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y87         FDCE (Prop_fdce_C_Q)         0.456    -0.395 r  color_bar_m0/h_cnt_reg[5]/Q
+                         net (fo=4, routed)           0.857     0.462    color_bar_m0/h_cnt_reg_n_0_[5]
+    SLICE_X64Y87         LUT3 (Prop_lut3_I2_O)        0.124     0.586 f  color_bar_m0/h_cnt[11]_i_5/O
+                         net (fo=3, routed)           0.683     1.269    color_bar_m0/h_cnt[11]_i_5_n_0
+    SLICE_X64Y87         LUT6 (Prop_lut6_I3_O)        0.124     1.393 r  color_bar_m0/active_x[11]_i_3/O
+                         net (fo=1, routed)           0.418     1.811    color_bar_m0/active_x[11]_i_3_n_0
+    SLICE_X64Y89         LUT5 (Prop_lut5_I0_O)        0.124     1.935 r  color_bar_m0/active_x[11]_i_1/O
+                         net (fo=12, routed)          0.575     2.509    color_bar_m0/active_x[11]_i_1_n_0
+    SLICE_X62Y90         FDCE                                         r  color_bar_m0/active_x_reg[9]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                     15.385    15.385 r  
+    Y18                                               0.000    15.385 r  sys_clk (IN)
+                         net (fo=0)                   0.000    15.385    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         1.425    16.810 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           1.162    17.972    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.221    10.750 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.587    12.337    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    12.428 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         1.507    13.935    color_bar_m0/clk_out1
+    SLICE_X62Y90         FDCE                                         r  color_bar_m0/active_x_reg[9]/C
+                         clock pessimism              0.575    14.510    
+                         clock uncertainty           -0.091    14.419    
+    SLICE_X62Y90         FDCE (Setup_fdce_C_CE)      -0.205    14.214    color_bar_m0/active_x_reg[9]
+  -------------------------------------------------------------------
+                         required time                         14.214    
+                         arrival time                          -2.509    
+  -------------------------------------------------------------------
+                         slack                                 11.705    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.122ns  (arrival time - required time)
+  Source:                 rgb2dvi_m0/LockLostReset/SyncAsyncx/oSyncStages_reg[0]/C
+                            (rising edge-triggered cell FDPE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            rgb2dvi_m0/LockLostReset/SyncAsyncx/oSyncStages_reg[1]/D
+                            (rising edge-triggered cell FDPE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_video_pll rise@0.000ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.788ns
+    Source Clock Delay      (SCD):    -0.552ns
+    Clock Pessimism Removal (CPR):    -0.236ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.264     0.264 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.704    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.362    -1.659 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.489    -1.170    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.144 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.592    -0.552    rgb2dvi_m0/LockLostReset/SyncAsyncx/clk_out1
+    SLICE_X65Y92         FDPE                                         r  rgb2dvi_m0/LockLostReset/SyncAsyncx/oSyncStages_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y92         FDPE (Prop_fdpe_C_Q)         0.141    -0.411 r  rgb2dvi_m0/LockLostReset/SyncAsyncx/oSyncStages_reg[0]/Q
+                         net (fo=1, routed)           0.056    -0.355    rgb2dvi_m0/LockLostReset/SyncAsyncx/oSyncStages[0]
+    SLICE_X65Y92         FDPE                                         r  rgb2dvi_m0/LockLostReset/SyncAsyncx/oSyncStages_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.452     0.452 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.932    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.145    -2.214 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.534    -1.680    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.651 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.862    -0.788    rgb2dvi_m0/LockLostReset/SyncAsyncx/clk_out1
+    SLICE_X65Y92         FDPE                                         r  rgb2dvi_m0/LockLostReset/SyncAsyncx/oSyncStages_reg[1]/C
+                         clock pessimism              0.236    -0.552    
+    SLICE_X65Y92         FDPE (Hold_fdpe_C_D)         0.075    -0.477    rgb2dvi_m0/LockLostReset/SyncAsyncx/oSyncStages_reg[1]
+  -------------------------------------------------------------------
+                         required time                          0.477    
+                         arrival time                          -0.355    
+  -------------------------------------------------------------------
+                         slack                                  0.122    
+
+Slack (MET) :             0.150ns  (arrival time - required time)
+  Source:                 color_bar_m0/active_x_reg[7]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            color_bar_m0/rgb_b_reg_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_video_pll rise@0.000ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        0.287ns  (logic 0.186ns (64.749%)  route 0.101ns (35.251%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.789ns
+    Source Clock Delay      (SCD):    -0.553ns
+    Clock Pessimism Removal (CPR):    -0.252ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.264     0.264 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.704    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.362    -1.659 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.489    -1.170    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.144 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.591    -0.553    color_bar_m0/clk_out1
+    SLICE_X62Y89         FDCE                                         r  color_bar_m0/active_x_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y89         FDCE (Prop_fdce_C_Q)         0.141    -0.412 f  color_bar_m0/active_x_reg[7]/Q
+                         net (fo=1, routed)           0.101    -0.311    color_bar_m0/active_x[7]
+    SLICE_X64Y88         LUT5 (Prop_lut5_I0_O)        0.045    -0.266 r  color_bar_m0/rgb_b_reg[6]_i_1/O
+                         net (fo=1, routed)           0.000    -0.266    color_bar_m0/rgb_b_reg[6]_i_1_n_0
+    SLICE_X64Y88         FDCE                                         r  color_bar_m0/rgb_b_reg_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.452     0.452 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.932    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.145    -2.214 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.534    -1.680    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.651 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.861    -0.789    color_bar_m0/clk_out1
+    SLICE_X64Y88         FDCE                                         r  color_bar_m0/rgb_b_reg_reg[6]/C
+                         clock pessimism              0.252    -0.537    
+    SLICE_X64Y88         FDCE (Hold_fdce_C_D)         0.121    -0.416    color_bar_m0/rgb_b_reg_reg[6]
+  -------------------------------------------------------------------
+                         required time                          0.416    
+                         arrival time                          -0.266    
+  -------------------------------------------------------------------
+                         slack                                  0.150    
+
+Slack (MET) :             0.162ns  (arrival time - required time)
+  Source:                 osd_display_m0/osd_ram_addr_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[10]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_video_pll rise@0.000ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        0.399ns  (logic 0.141ns (35.377%)  route 0.258ns (64.623%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.053ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.776ns
+    Source Clock Delay      (SCD):    -0.556ns
+    Clock Pessimism Removal (CPR):    -0.273ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.264     0.264 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.704    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.362    -1.659 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.489    -1.170    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.144 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.588    -0.556    osd_display_m0/clk_out1
+    SLICE_X59Y86         FDRE                                         r  osd_display_m0/osd_ram_addr_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y86         FDRE (Prop_fdre_C_Q)         0.141    -0.415 r  osd_display_m0/osd_ram_addr_reg[10]/Q
+                         net (fo=2, routed)           0.258    -0.158    osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[7]
+    RAMB18_X2Y34         RAMB18E1                                     r  osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.452     0.452 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.932    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.145    -2.214 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.534    -1.680    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.651 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.875    -0.776    osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y34         RAMB18E1                                     r  osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+                         clock pessimism              0.273    -0.503    
+    RAMB18_X2Y34         RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[10])
+                                                      0.183    -0.320    osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+  -------------------------------------------------------------------
+                         required time                          0.320    
+                         arrival time                          -0.158    
+  -------------------------------------------------------------------
+                         slack                                  0.162    
+
+Slack (MET) :             0.164ns  (arrival time - required time)
+  Source:                 osd_display_m0/osd_ram_addr_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[12]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_video_pll rise@0.000ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        0.399ns  (logic 0.141ns (35.333%)  route 0.258ns (64.667%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.052ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.776ns
+    Source Clock Delay      (SCD):    -0.555ns
+    Clock Pessimism Removal (CPR):    -0.273ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.264     0.264 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.704    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.362    -1.659 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.489    -1.170    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.144 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.589    -0.555    osd_display_m0/clk_out1
+    SLICE_X59Y87         FDRE                                         r  osd_display_m0/osd_ram_addr_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y87         FDRE (Prop_fdre_C_Q)         0.141    -0.414 r  osd_display_m0/osd_ram_addr_reg[12]/Q
+                         net (fo=2, routed)           0.258    -0.156    osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[9]
+    RAMB18_X2Y34         RAMB18E1                                     r  osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.452     0.452 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.932    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.145    -2.214 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.534    -1.680    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.651 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.875    -0.776    osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X2Y34         RAMB18E1                                     r  osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+                         clock pessimism              0.273    -0.503    
+    RAMB18_X2Y34         RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[12])
+                                                      0.183    -0.320    osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+  -------------------------------------------------------------------
+                         required time                          0.320    
+                         arrival time                          -0.156    
+  -------------------------------------------------------------------
+                         slack                                  0.164    
+
+Slack (MET) :             0.167ns  (arrival time - required time)
+  Source:                 osd_display_m0/timing_gen_xy_m0/x_cnt_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            osd_display_m0/region_active_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_video_pll rise@0.000ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        0.271ns  (logic 0.209ns (77.063%)  route 0.062ns (22.937%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.794ns
+    Source Clock Delay      (SCD):    -0.556ns
+    Clock Pessimism Removal (CPR):    -0.251ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.264     0.264 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.704    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.362    -1.659 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.489    -1.170    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.144 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.588    -0.556    osd_display_m0/timing_gen_xy_m0/clk_out1
+    SLICE_X60Y86         FDCE                                         r  osd_display_m0/timing_gen_xy_m0/x_cnt_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X60Y86         FDCE (Prop_fdce_C_Q)         0.164    -0.392 r  osd_display_m0/timing_gen_xy_m0/x_cnt_reg[6]/Q
+                         net (fo=2, routed)           0.062    -0.330    osd_display_m0/timing_gen_xy_m0/pos_x[6]
+    SLICE_X61Y86         LUT6 (Prop_lut6_I2_O)        0.045    -0.285 r  osd_display_m0/timing_gen_xy_m0/region_active_i_1/O
+                         net (fo=1, routed)           0.000    -0.285    osd_display_m0/region_active0
+    SLICE_X61Y86         FDRE                                         r  osd_display_m0/region_active_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.452     0.452 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.932    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.145    -2.214 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.534    -1.680    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.651 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.856    -0.794    osd_display_m0/clk_out1
+    SLICE_X61Y86         FDRE                                         r  osd_display_m0/region_active_reg/C
+                         clock pessimism              0.251    -0.543    
+    SLICE_X61Y86         FDRE (Hold_fdre_C_D)         0.091    -0.452    osd_display_m0/region_active_reg
+  -------------------------------------------------------------------
+                         required time                          0.452    
+                         arrival time                          -0.285    
+  -------------------------------------------------------------------
+                         slack                                  0.167    
+
+Slack (MET) :             0.185ns  (arrival time - required time)
+  Source:                 osd_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            osd_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_video_pll rise@0.000ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        0.268ns  (logic 0.141ns (52.538%)  route 0.127ns (47.462%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.794ns
+    Source Clock Delay      (SCD):    -0.554ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.264     0.264 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.704    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.362    -1.659 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.489    -1.170    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.144 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.590    -0.554    osd_display_m0/timing_gen_xy_m0/clk_out1
+    SLICE_X59Y88         FDRE                                         r  osd_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y88         FDRE (Prop_fdre_C_Q)         0.141    -0.413 r  osd_display_m0/timing_gen_xy_m0/i_data_d0_reg[22]/Q
+                         net (fo=2, routed)           0.127    -0.286    osd_display_m0/timing_gen_xy_m0/i_data_d0[22]
+    SLICE_X58Y86         FDRE                                         r  osd_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.452     0.452 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.932    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.145    -2.214 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.534    -1.680    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.651 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.856    -0.794    osd_display_m0/timing_gen_xy_m0/clk_out1
+    SLICE_X58Y86         FDRE                                         r  osd_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]/C
+                         clock pessimism              0.253    -0.541    
+    SLICE_X58Y86         FDRE (Hold_fdre_C_D)         0.070    -0.471    osd_display_m0/timing_gen_xy_m0/i_data_d1_reg[22]
+  -------------------------------------------------------------------
+                         required time                          0.471    
+                         arrival time                          -0.286    
+  -------------------------------------------------------------------
+                         slack                                  0.185    
+
+Slack (MET) :             0.185ns  (arrival time - required time)
+  Source:                 osd_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            osd_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_video_pll rise@0.000ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        0.269ns  (logic 0.141ns (52.343%)  route 0.128ns (47.657%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.794ns
+    Source Clock Delay      (SCD):    -0.554ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.264     0.264 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.704    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.362    -1.659 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.489    -1.170    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.144 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.590    -0.554    osd_display_m0/timing_gen_xy_m0/clk_out1
+    SLICE_X59Y88         FDRE                                         r  osd_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y88         FDRE (Prop_fdre_C_Q)         0.141    -0.413 r  osd_display_m0/timing_gen_xy_m0/i_data_d0_reg[14]/Q
+                         net (fo=2, routed)           0.128    -0.285    osd_display_m0/timing_gen_xy_m0/i_data_d0[14]
+    SLICE_X58Y86         FDRE                                         r  osd_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.452     0.452 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.932    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.145    -2.214 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.534    -1.680    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.651 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.856    -0.794    osd_display_m0/timing_gen_xy_m0/clk_out1
+    SLICE_X58Y86         FDRE                                         r  osd_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]/C
+                         clock pessimism              0.253    -0.541    
+    SLICE_X58Y86         FDRE (Hold_fdre_C_D)         0.071    -0.470    osd_display_m0/timing_gen_xy_m0/i_data_d1_reg[14]
+  -------------------------------------------------------------------
+                         required time                          0.470    
+                         arrival time                          -0.285    
+  -------------------------------------------------------------------
+                         slack                                  0.185    
+
+Slack (MET) :             0.191ns  (arrival time - required time)
+  Source:                 rgb2dvi_m0/LockLostReset/SyncAsyncx/oSyncStages_reg[1]/C
+                            (rising edge-triggered cell FDPE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            rgb2dvi_m0/ClockSerializer/SerializerMaster/RST
+                            (rising edge-triggered cell OSERDESE2 clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_video_pll rise@0.000ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        0.727ns  (logic 0.128ns (17.615%)  route 0.599ns (82.385%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.031ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.794ns
+    Source Clock Delay      (SCD):    -0.552ns
+    Clock Pessimism Removal (CPR):    -0.273ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.264     0.264 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.704    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.362    -1.659 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.489    -1.170    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.144 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.592    -0.552    rgb2dvi_m0/LockLostReset/SyncAsyncx/clk_out1
+    SLICE_X65Y92         FDPE                                         r  rgb2dvi_m0/LockLostReset/SyncAsyncx/oSyncStages_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y92         FDPE (Prop_fdpe_C_Q)         0.128    -0.424 r  rgb2dvi_m0/LockLostReset/SyncAsyncx/oSyncStages_reg[1]/Q
+                         net (fo=8, routed)           0.599     0.174    rgb2dvi_m0/ClockSerializer/aRst
+    OLOGIC_X1Y94         OSERDESE2                                    r  rgb2dvi_m0/ClockSerializer/SerializerMaster/RST
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.452     0.452 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.932    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.145    -2.214 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.534    -1.680    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.651 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.856    -0.794    rgb2dvi_m0/ClockSerializer/clk_out1
+    OLOGIC_X1Y94         OSERDESE2                                    r  rgb2dvi_m0/ClockSerializer/SerializerMaster/CLKDIV
+                         clock pessimism              0.273    -0.521    
+    OLOGIC_X1Y94         OSERDESE2 (Hold_oserdese2_CLKDIV_RST)
+                                                      0.505    -0.016    rgb2dvi_m0/ClockSerializer/SerializerMaster
+  -------------------------------------------------------------------
+                         required time                          0.016    
+                         arrival time                           0.174    
+  -------------------------------------------------------------------
+                         slack                                  0.191    
+
+Slack (MET) :             0.199ns  (arrival time - required time)
+  Source:                 osd_display_m0/region_active_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            osd_display_m0/region_active_d0_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_video_pll rise@0.000ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        0.289ns  (logic 0.141ns (48.853%)  route 0.148ns (51.147%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.794ns
+    Source Clock Delay      (SCD):    -0.556ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.264     0.264 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.704    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.362    -1.659 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.489    -1.170    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.144 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.588    -0.556    osd_display_m0/clk_out1
+    SLICE_X61Y86         FDRE                                         r  osd_display_m0/region_active_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y86         FDRE (Prop_fdre_C_Q)         0.141    -0.415 r  osd_display_m0/region_active_reg/Q
+                         net (fo=16, routed)          0.148    -0.268    osd_display_m0/region_active
+    SLICE_X58Y86         FDRE                                         r  osd_display_m0/region_active_d0_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.452     0.452 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.932    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.145    -2.214 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.534    -1.680    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.651 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.856    -0.794    osd_display_m0/clk_out1
+    SLICE_X58Y86         FDRE                                         r  osd_display_m0/region_active_d0_reg/C
+                         clock pessimism              0.253    -0.541    
+    SLICE_X58Y86         FDRE (Hold_fdre_C_D)         0.075    -0.466    osd_display_m0/region_active_d0_reg
+  -------------------------------------------------------------------
+                         required time                          0.466    
+                         arrival time                          -0.268    
+  -------------------------------------------------------------------
+                         slack                                  0.199    
+
+Slack (MET) :             0.201ns  (arrival time - required time)
+  Source:                 rgb2dvi_m0/DataEncoders[0].DataEncoder/pC1_2_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Destination:            rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOutRaw_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_video_pll  {rise@0.000ns fall@7.692ns period=15.385ns})
+  Path Group:             clk_out1_video_pll
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_video_pll rise@0.000ns - clk_out1_video_pll rise@0.000ns)
+  Data Path Delay:        0.350ns  (logic 0.189ns (54.003%)  route 0.161ns (45.997%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.788ns
+    Source Clock Delay      (SCD):    -0.552ns
+    Clock Pessimism Removal (CPR):    -0.252ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.264     0.264 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.704    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.362    -1.659 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.489    -1.170    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.144 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.592    -0.552    rgb2dvi_m0/DataEncoders[0].DataEncoder/clk_out1
+    SLICE_X63Y91         FDRE                                         r  rgb2dvi_m0/DataEncoders[0].DataEncoder/pC1_2_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y91         FDRE (Prop_fdre_C_Q)         0.141    -0.411 f  rgb2dvi_m0/DataEncoders[0].DataEncoder/pC1_2_reg/Q
+                         net (fo=6, routed)           0.161    -0.250    rgb2dvi_m0/DataEncoders[0].DataEncoder/osd_display_m0/pos_vs_d1
+    SLICE_X64Y90         LUT4 (Prop_lut4_I3_O)        0.048    -0.202 r  rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOutRaw[0]_i_1/O
+                         net (fo=1, routed)           0.000    -0.202    rgb2dvi_m0/DataEncoders[0].DataEncoder/q_out_20_in[0]
+    SLICE_X64Y90         FDRE                                         r  rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOutRaw_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_video_pll rise edge)
+                                                      0.000     0.000 r  
+    Y18                                               0.000     0.000 r  sys_clk (IN)
+                         net (fo=0)                   0.000     0.000    sys_clk
+    Y18                  IBUF (Prop_ibuf_I_O)         0.452     0.452 r  sys_clk_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.932    video_pll_m0/inst/clk_in1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.145    -2.214 r  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.534    -1.680    video_pll_m0/inst/clk_out1_video_pll
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.651 r  video_pll_m0/inst/clkout1_buf/O
+                         net (fo=153, routed)         0.862    -0.788    rgb2dvi_m0/DataEncoders[0].DataEncoder/clk_out1
+    SLICE_X64Y90         FDRE                                         r  rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOutRaw_reg[0]/C
+                         clock pessimism              0.252    -0.536    
+    SLICE_X64Y90         FDRE (Hold_fdre_C_D)         0.133    -0.403    rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOutRaw_reg[0]
+  -------------------------------------------------------------------
+                         required time                          0.403    
+                         arrival time                          -0.202    
+  -------------------------------------------------------------------
+                         slack                                  0.201    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_video_pll
+Waveform(ns):       { 0.000 7.692 }
+Period(ns):         15.385
+Sources:            { video_pll_m0/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         15.385      12.809     RAMB18_X2Y34     osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         15.385      12.809     RAMB18_X2Y34     osd_display_m0/osd_rom_m0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKBWRCLK
+Min Period        n/a     BUFG/I              n/a            2.155         15.385      13.229     BUFGCTRL_X0Y0    video_pll_m0/inst/clkout1_buf/I
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         15.385      13.718     OLOGIC_X1Y94     rgb2dvi_m0/ClockSerializer/SerializerMaster/CLKDIV
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         15.385      13.718     OLOGIC_X1Y93     rgb2dvi_m0/ClockSerializer/SerializerSlave/CLKDIV
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         15.385      13.718     OLOGIC_X1Y90     rgb2dvi_m0/DataEncoders[0].DataSerializer/SerializerMaster/CLKDIV
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         15.385      13.718     OLOGIC_X1Y84     rgb2dvi_m0/DataEncoders[1].DataSerializer/SerializerMaster/CLKDIV
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         15.385      13.718     OLOGIC_X1Y83     rgb2dvi_m0/DataEncoders[1].DataSerializer/SerializerSlave/CLKDIV
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         15.385      13.718     OLOGIC_X1Y86     rgb2dvi_m0/DataEncoders[2].DataSerializer/SerializerMaster/CLKDIV
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         15.385      13.718     OLOGIC_X1Y85     rgb2dvi_m0/DataEncoders[2].DataSerializer/SerializerSlave/CLKDIV
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       15.385      197.975    MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         7.692       6.712      SLICE_X64Y91     rgb2dvi_m0/DataEncoders[0].DataEncoder/pC0_1_reg_srl3/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         7.692       6.712      SLICE_X64Y91     rgb2dvi_m0/DataEncoders[0].DataEncoder/pC0_1_reg_srl3/CLK
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         7.692       7.192      SLICE_X63Y89     color_bar_m0/active_x_reg[0]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         7.692       7.192      SLICE_X63Y89     color_bar_m0/active_x_reg[0]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         7.692       7.192      SLICE_X62Y90     color_bar_m0/active_x_reg[10]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         7.692       7.192      SLICE_X62Y90     color_bar_m0/active_x_reg[11]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         7.692       7.192      SLICE_X63Y89     color_bar_m0/active_x_reg[1]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         7.692       7.192      SLICE_X63Y89     color_bar_m0/active_x_reg[1]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         7.692       7.192      SLICE_X62Y88     color_bar_m0/active_x_reg[2]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         7.692       7.192      SLICE_X62Y88     color_bar_m0/active_x_reg[2]/C
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         7.692       6.712      SLICE_X64Y91     rgb2dvi_m0/DataEncoders[0].DataEncoder/pC0_1_reg_srl3/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         7.692       6.712      SLICE_X64Y91     rgb2dvi_m0/DataEncoders[0].DataEncoder/pC0_1_reg_srl3/CLK
+High Pulse Width  Fast    FDRE/C              n/a            0.500         7.692       7.192      SLICE_X59Y86     osd_display_m0/osd_ram_addr_reg[10]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         7.692       7.192      SLICE_X59Y86     osd_display_m0/osd_ram_addr_reg[11]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         7.692       7.192      SLICE_X59Y87     osd_display_m0/osd_ram_addr_reg[12]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         7.692       7.192      SLICE_X59Y85     osd_display_m0/osd_ram_addr_reg[5]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         7.692       7.192      SLICE_X59Y85     osd_display_m0/osd_ram_addr_reg[6]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         7.692       7.192      SLICE_X59Y85     osd_display_m0/osd_ram_addr_reg[7]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         7.692       7.192      SLICE_X59Y86     osd_display_m0/osd_ram_addr_reg[8]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         7.692       7.192      SLICE_X59Y86     osd_display_m0/osd_ram_addr_reg[9]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_video_pll
+  To Clock:  clk_out2_video_pll
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        0.922ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out2_video_pll
+Waveform(ns):       { 0.000 1.538 }
+Period(ns):         3.077
+Sources:            { video_pll_m0/inst/mmcm_adv_inst/CLKOUT1 }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         3.077       0.922      BUFGCTRL_X0Y1    video_pll_m0/inst/clkout2_buf/I
+Min Period  n/a     OSERDESE2/CLK       n/a            1.667         3.077       1.410      OLOGIC_X1Y94     rgb2dvi_m0/ClockSerializer/SerializerMaster/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.667         3.077       1.410      OLOGIC_X1Y93     rgb2dvi_m0/ClockSerializer/SerializerSlave/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.667         3.077       1.410      OLOGIC_X1Y90     rgb2dvi_m0/DataEncoders[0].DataSerializer/SerializerMaster/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.667         3.077       1.410      OLOGIC_X1Y84     rgb2dvi_m0/DataEncoders[1].DataSerializer/SerializerMaster/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.667         3.077       1.410      OLOGIC_X1Y83     rgb2dvi_m0/DataEncoders[1].DataSerializer/SerializerSlave/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.667         3.077       1.410      OLOGIC_X1Y86     rgb2dvi_m0/DataEncoders[2].DataSerializer/SerializerMaster/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.667         3.077       1.410      OLOGIC_X1Y85     rgb2dvi_m0/DataEncoders[2].DataSerializer/SerializerSlave/CLK
+Min Period  n/a     OSERDESE2/CLK       n/a            1.667         3.077       1.410      OLOGIC_X1Y89     rgb2dvi_m0/DataEncoders[0].DataSerializer/SerializerSlave/CLK
+Min Period  n/a     MMCME2_ADV/CLKOUT1  n/a            1.249         3.077       1.828      MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKOUT1
+Max Period  n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       3.077       210.283    MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKOUT1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_video_pll
+  To Clock:  clkfbout_video_pll
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       17.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_video_pll
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { video_pll_m0/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            2.155         20.000      17.845     BUFGCTRL_X0Y2    video_pll_m0/inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         20.000      18.751     MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         20.000      18.751     MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       20.000      80.000     MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       20.000      193.360    MMCME2_ADV_X0Y0  video_pll_m0/inst/mmcm_adv_inst/CLKFBOUT
+
+
+

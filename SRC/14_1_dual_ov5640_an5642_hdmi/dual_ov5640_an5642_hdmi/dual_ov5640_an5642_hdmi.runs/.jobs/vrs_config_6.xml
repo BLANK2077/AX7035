@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_200M_synth_1" LaunchDir="D:/demo_ax7035/demo_ax7035/dual_ov5640_an5642_hdmi/dual_ov5640_an5642_hdmi/dual_ov5640_an5642_hdmi.runs/clk_200M_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_pll_synth_1" LaunchDir="D:/demo_ax7035/demo_ax7035/dual_ov5640_an5642_hdmi/dual_ov5640_an5642_hdmi/dual_ov5640_an5642_hdmi.runs/video_pll_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

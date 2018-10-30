@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ddr3_synth_1" LaunchDir="D:/demo_AX7050/ddrlcdov5640/ddr3_an5640_lcd.runs/ddr3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
