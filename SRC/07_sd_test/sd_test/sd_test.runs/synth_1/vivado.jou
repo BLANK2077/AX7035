@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Mar 19 20:06:27 2018
+# Process ID: 8900
+# Current directory: D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/sd_test.runs/synth_1
+# Command line: vivado.exe -log sd_card_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sd_card_test.tcl
+# Log file: D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/sd_test.runs/synth_1/sd_card_test.vds
+# Journal file: D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/sd_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sd_card_test.tcl -notrace

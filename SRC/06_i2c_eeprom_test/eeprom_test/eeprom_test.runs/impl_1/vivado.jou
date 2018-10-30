@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Mar 19 20:06:45 2018
+# Process ID: 9456
+# Current directory: D:/demo_ax7035/demo_ax7035/6_i2c_eeprom_test/eeprom_test/eeprom_test.runs/impl_1
+# Command line: vivado.exe -log i2c_eeprom_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source i2c_eeprom_test.tcl -notrace
+# Log file: D:/demo_ax7035/demo_ax7035/6_i2c_eeprom_test/eeprom_test/eeprom_test.runs/impl_1/i2c_eeprom_test.vdi
+# Journal file: D:/demo_ax7035/demo_ax7035/6_i2c_eeprom_test/eeprom_test/eeprom_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source i2c_eeprom_test.tcl -notrace

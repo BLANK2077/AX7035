@@ -1,0 +1,115 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Mar 20 13:54:55 2018
+| Host         : ALINX000008-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    43 |
+| Unused register locations in slices containing registers |   129 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             369 |          118 |
+| No           | No                    | Yes                    |              37 |           21 |
+| No           | Yes                   | No                     |             111 |           40 |
+| Yes          | No                    | No                     |              37 |           12 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             133 |           33 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|                     Clock Signal                    |                                           Enable Signal                                           |                                Set/Reset Signal                               | Slice Load Count | Bel Load Count |
++-----------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|  clk_refm0/inst/clk_out1                            |                                                                                                   | dvi2rgb_m0/TMDS_ClockingX/RdyLostReset/SyncAsyncx/oSyncStages[1]              |                1 |              1 |
+|  dvi2rgb_m0/GenerateBUFG.ResyncToBUFG_X/PixelClkOut |                                                                                                   | rgb2dvi_m0/ClockGenInternal.ClockGenX/in0                                     |                1 |              2 |
+|  clk_refm0/inst/clk_out1                            |                                                                                                   | dvi2rgb_m0/TMDS_ClockingX/RdyLostReset/aRst_int                               |                1 |              2 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   | dvi2rgb_m0/TMDS_ClockingX/oSyncStages_reg[0]                                  |                1 |              2 |
+|  clk_refm0/inst/clk_out1                            |                                                                                                   | dvi2rgb_m0/TMDS_ClockingX/LockLostReset/SyncAsyncx/oSyncStages[1]             |                1 |              2 |
+|  clk_refm0/inst/clk_out1                            |                                                                                                   | dvi2rgb_m0/TMDS_ClockingX/LockLostReset/aRst_int                              |                2 |              3 |
+|  dvi2rgb_m0/GenerateBUFG.ResyncToBUFG_X/PixelClkOut |                                                                                                   | rgb2dvi_m0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              4 |
+|  clk_refm0/inst/clk_out1                            | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SDA/Filter.cntPeriods[3]_i_2_n_0    | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/SyncSDA/SS[0]           |                1 |              4 |
+|  clk_refm0/inst/clk_out1                            | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SCL/Filter.cntPeriods[3]_i_2__0_n_0 | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/SyncSCL/SS[0]           |                1 |              4 |
+|  clk_refm0/inst/clk_out1                            | dvi2rgb_m0/TMDS_ClockingX/rDlyRstCnt[4]_i_1_n_0                                                   | dvi2rgb_m0/TMDS_ClockingX/LockLostReset/SyncAsyncx/oSyncStages[1]             |                2 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[0].DecoderX/PhaseAlignX/pCenterTap[5]_i_1_n_0                             |                                                                               |                2 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[2].DecoderX/PhaseAlignX/pCenterTap[5]_i_1_n_0                             |                                                                               |                2 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pCenterTap[5]_i_1_n_0                             |                                                                               |                2 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdEn                                            | dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pMeRdy_int_i_1_n_0           |                1 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdEn                                            | dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pMeRdy_int_i_1_n_0           |                2 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdEn                                            | dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pMeRdy_int_i_1_n_0           |                1 |              5 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   | dvi2rgb_m0/DataDecoders[2].DecoderX/PhaseAlignX/pCtlTknCnt[6]_i_1_n_0         |                1 |              7 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   | dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pMeRdy_int_i_1_n_0           |                2 |              7 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   | dvi2rgb_m0/DataDecoders[0].DecoderX/PhaseAlignX/pCtlTknCnt[6]_i_1_n_0         |                2 |              7 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   | dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pMeRdy_int_i_1_n_0           |                2 |              7 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pCtlTknCnt[6]_i_1_n_0         |                2 |              7 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   | dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pMeRdy_int_i_1_n_0           |                2 |              7 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   | dvi2rgb_m0/DataDecoders[2].DecoderX//i__n_0                                   |                3 |              8 |
+|  clk_refm0/inst/clk_out1                            | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/dataByte[7]_i_1_n_0                         |                                                                               |                3 |              8 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   | dvi2rgb_m0/DataDecoders[1].DecoderX//i__n_0                                   |                4 |              9 |
+|  clk_refm0/inst/clk_out1                            |                                                                                                   | dvi2rgb_m0/LockLostReset/SyncAsyncx/oSyncStages[1]                            |                6 |              9 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   | dvi2rgb_m0/DataDecoders[0].DecoderX//i__n_0                                   |                3 |             10 |
+|  dvi2rgb_m0/GenerateBUFG.ResyncToBUFG_X/PixelClkOut |                                                                                                   | rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                5 |             10 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[0].DecoderX/PhaseAlignX/pStateNxt                                         | dvi2rgb_m0/DataDecoders[0].DecoderX/pAlignRst_reg_n_0                         |                3 |             11 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[2].DecoderX/PhaseAlignX/pStateNxt                                         | dvi2rgb_m0/DataDecoders[2].DecoderX/pAlignRst_reg_n_0                         |                2 |             11 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[1].DecoderX/PhaseAlignX/pStateNxt                                         | dvi2rgb_m0/DataDecoders[1].DecoderX/pAlignRst_reg_n_0                         |                2 |             11 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   | dvi2rgb_m0/LockLostReset/SyncAsyncx/oSyncStages[1]                            |                7 |             12 |
+|  clk_refm0/inst/clk_out1                            | dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/E[0]                                        |                                                                               |                3 |             14 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pAllVld                                          |                                                                               |                2 |             16 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pAllVld                                          |                                                                               |                2 |             16 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             | dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pAllVld                                          |                                                                               |                2 |             16 |
+|  clk_refm0/inst/clk_out1                            | dvi2rgb_m0/DataDecoders[2].DecoderX/rTimeoutCnt[0]_i_1_n_0                                        | dvi2rgb_m0/DataDecoders[2].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1]     |                6 |             24 |
+|  clk_refm0/inst/clk_out1                            | dvi2rgb_m0/DataDecoders[0].DecoderX/rTimeoutCnt[0]_i_1__1_n_0                                     | dvi2rgb_m0/DataDecoders[0].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1]     |                6 |             24 |
+|  clk_refm0/inst/clk_out1                            | dvi2rgb_m0/DataDecoders[1].DecoderX/rTimeoutCnt[0]_i_1__0_n_0                                     | dvi2rgb_m0/DataDecoders[1].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1]     |                6 |             24 |
+|  dvi2rgb_m0/GenerateBUFG.ResyncToBUFG_X/PixelClkOut |                                                                                                   | rgb2dvi_m0/DataEncoders[0].DataEncoder/SR[0]                                  |               14 |             32 |
+|  clk_refm0/inst/clk_out1                            |                                                                                                   |                                                                               |               17 |             38 |
+|  dvi2rgb_m0/TMDS_ClockingX/PixelClk_int             |                                                                                                   |                                                                               |               52 |            165 |
+|  dvi2rgb_m0/GenerateBUFG.ResyncToBUFG_X/PixelClkOut |                                                                                                   |                                                                               |               50 |            169 |
++-----------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     4 |
+| 3      |                     1 |
+| 4      |                     3 |
+| 5      |                     7 |
+| 7      |                     6 |
+| 8      |                     2 |
+| 9      |                     2 |
+| 10     |                     2 |
+| 11     |                     3 |
+| 12     |                     1 |
+| 14     |                     1 |
+| 16+    |                    10 |
++--------+-----------------------+
+
+

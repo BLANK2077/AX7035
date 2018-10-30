@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-1" LaunchTime="1521525173">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/DVI_Constants.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/DVI_Constants.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/ChannelBond.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/ChannelBond.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/SyncAsync.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/SyncAsync.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/SyncAsyncReset.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/SyncAsyncReset.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/ClockGen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/rgb2dvi_v1_2/src/ClockGen.vhd"/>
+        <Attr Name="ImportTime" Val="1452922974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/GlitchFilter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/GlitchFilter.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/TWI_SlaveCtl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/TWI_SlaveCtl.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/EEPROM_8b.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/EEPROM_8b.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/InputSERDES.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/InputSERDES.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/OutputSERDES.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/rgb2dvi_v1_2/src/OutputSERDES.vhd"/>
+        <Attr Name="ImportTime" Val="1452922974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/PhaseAlign.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/PhaseAlign.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/ResyncToBUFG.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/ResyncToBUFG.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/SyncBase.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/SyncBase.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/TMDS_Clocking.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/TMDS_Clocking.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/TMDS_Decoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/TMDS_Decoder.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/TMDS_Encoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/rgb2dvi_v1_2/src/TMDS_Encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1452922974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/dvi2rgb.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/dvi2rgb.vhd"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/rgb2dvi.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/rgb2dvi_v1_2/src/rgb2dvi.vhd"/>
+        <Attr Name="ImportTime" Val="1452922974"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/900p_edid.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/900p_edid.txt"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/1024_edid.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/1024_edid.txt"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/720p_edid.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/720p_edid.txt"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/1080_edid.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/repo/digilent/ip/dvi2rgb_v1_6/src/1080_edid.txt"/>
+        <Attr Name="ImportTime" Val="1456753974"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_ref"/>
+</GenRun>

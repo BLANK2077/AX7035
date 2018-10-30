@@ -1,0 +1,1122 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6736 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 403.094 ; gain = 101.371
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Clocking.vhd:128]
+WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/dvi2rgb.vhd:159]
+WARNING: [Synth 8-1565] actual for formal port potherchrdy is neither a static name nor a globally static expression [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/dvi2rgb.vhd:180]
+WARNING: [Synth 8-1565] actual for formal port potherchvld is neither a static name nor a globally static expression [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/dvi2rgb.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'top' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/new/top.v:4]
+INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655]
+INFO: [Synth 8-638] synthesizing module 'dvi2rgb' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/dvi2rgb.vhd:110]
+	Parameter kEmulateDDC bound to: 1 - type: bool 
+	Parameter kRstActiveHigh bound to: 0 - type: bool 
+	Parameter kAddBUFG bound to: 1 - type: bool 
+	Parameter kClkRange bound to: 1 - type: integer 
+	Parameter kEdidFileName bound to: 900p_edid.txt - type: string 
+	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
+	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/dvi2rgb.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Clocking' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Clocking.vhd:75]
+	Parameter kClkRange bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncAsyncReset.vhd:72]
+	Parameter kPolarity bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncAsyncReset.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b1 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncAsync.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (2#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (3#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncAsyncReset.vhd:72]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'IDelayCtrlX' to cell 'IDELAYCTRL' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Clocking.vhd:118]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Clocking.vhd:132]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 5.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 6.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 1.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Clocking.vhd:173]
+INFO: [Synth 8-113] binding component instance 'SerialClkBuffer' to cell 'BUFIO' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Clocking.vhd:232]
+	Parameter BUFR_DIVIDE bound to: 5 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'PixelClkBuffer' to cell 'BUFR' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Clocking.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (3#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Clocking' (4#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Clocking.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Decoder' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:96]
+	Parameter kCtlTknCount bound to: 128 - type: integer 
+	Parameter kTimeoutMs bound to: 50 - type: integer 
+	Parameter kRefClkFrqMHz bound to: 200 - type: integer 
+	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
+	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:101]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'InputSERDES' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/InputSERDES.vhd:85]
+	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
+	Parameter kParallelWidth bound to: 10 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/InputSERDES.vhd:92]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+INFO: [Synth 8-113] binding component instance 'InputDelay' to cell 'IDELAYE2' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/InputSERDES.vhd:102]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'DeserializerMaster' to cell 'ISERDESE2' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/InputSERDES.vhd:130]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'DeserializerSlave' to cell 'ISERDESE2' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/InputSERDES.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'InputSERDES' (5#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/InputSERDES.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'SyncBase' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncBase.vhd:74]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (5#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase' (6#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'SyncBase__parameterized0' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncBase.vhd:74]
+	Parameter kResetTo bound to: 1'b1 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncBase__parameterized0' (6#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'PhaseAlign' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:95]
+	Parameter kUseFastAlgorithm bound to: 0 - type: bool 
+	Parameter kCtlTknCount bound to: 128 - type: integer 
+	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
+	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
+WARNING: [Synth 8-614] signal 'pEyeOpenCnt' is read in the process but is not in the sensitivity list [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:318]
+WARNING: [Synth 8-6014] Unused sequential element pTkn0FlagQ_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:172]
+WARNING: [Synth 8-6014] Unused sequential element pTkn1FlagQ_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:173]
+WARNING: [Synth 8-6014] Unused sequential element pTkn2FlagQ_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element pTkn3FlagQ_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:175]
+WARNING: [Synth 8-6014] Unused sequential element pDelayFastOvf_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:209]
+INFO: [Synth 8-256] done synthesizing module 'PhaseAlign' (7#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'ChannelBond' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ChannelBond.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'ChannelBond' (8#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ChannelBond.vhd:74]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'InputSERDES_X'. This will prevent further optimization [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:116]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ChannelBondX'. This will prevent further optimization [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:241]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'PhaseAlignX'. This will prevent further optimization [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:182]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Decoder' (9#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'ResyncToBUFG' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ResyncToBUFG.vhd:78]
+INFO: [Synth 8-113] binding component instance 'InstBUFG' to cell 'BUFG' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ResyncToBUFG.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'ResyncToBUFG' (10#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ResyncToBUFG.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'EEPROM_8b' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/EEPROM_8b.vhd:85]
+	Parameter kSampleClkFreqInMHz bound to: 200 - type: integer 
+	Parameter kSlaveAddress bound to: 7'b1010000 
+	Parameter kAddrBits bound to: 7 - type: integer 
+	Parameter kWritable bound to: 0 - type: bool 
+	Parameter kInitFileName bound to: 900p_edid.txt - type: string 
+INFO: [Synth 8-638] synthesizing module 'TWI_SlaveCtl' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TWI_SlaveCtl.vhd:87]
+	Parameter SLAVE_ADDRESS bound to: 8'b10100000 
+	Parameter kSampleClkFreqInMHz bound to: 200 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "gray" *) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TWI_SlaveCtl.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'GlitchFilter' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/GlitchFilter.vhd:69]
+	Parameter kNoOfPeriodsToFilter bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GlitchFilter' (11#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/GlitchFilter.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'TWI_SlaveCtl' (12#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TWI_SlaveCtl.vhd:87]
+INFO: [Synth 8-226] default block is never used [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/EEPROM_8b.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'EEPROM_8b' (13#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/EEPROM_8b.vhd:85]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'GenerateBUFG.ResyncToBUFG_X'. This will prevent further optimization [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/dvi2rgb.vhd:213]
+INFO: [Synth 8-256] done synthesizing module 'dvi2rgb' (14#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/dvi2rgb.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'clk_ref' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.runs/synth_1/.Xil/Vivado-7332-ALINX000008-PC/realtime/clk_ref_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_ref' (15#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.runs/synth_1/.Xil/Vivado-7332-ALINX000008-PC/realtime/clk_ref_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/rgb2dvi.vhd:89]
+	Parameter kGenerateSerialClk bound to: 1 - type: bool 
+	Parameter kClkPrimitive bound to: MMCM - type: string 
+	Parameter kClkRange bound to: 1 - type: integer 
+	Parameter kRstActiveHigh bound to: 1 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'ClockGen' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ClockGen.vhd:46]
+	Parameter kClkRange bound to: 1 - type: integer 
+	Parameter kClkPrimitive bound to: MMCM - type: string 
+WARNING: [Synth 8-614] signal 'pRst' is read in the process but is not in the sensitivity list [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ClockGen.vhd:71]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 5.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 6.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 1.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 5 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ClockGen.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'ClockGen' (16#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ClockGen.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'OutputSERDES' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/OutputSERDES.vhd:76]
+	Parameter kParallelWidth bound to: 10 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OutputBuffer' to cell 'OBUFDS' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/OutputSERDES.vhd:83]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerMaster' to cell 'OSERDESE2' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/OutputSERDES.vhd:92]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerSlave' to cell 'OSERDESE2' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/OutputSERDES.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'OutputSERDES' (17#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/OutputSERDES.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Encoder' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Encoder' (18#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'rgb2dvi' (19#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/rgb2dvi.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'top' (20#1) [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/new/top.v:4]
+WARNING: [Synth 8-3917] design top has port HDMI_hdmi_in_OEN[0] driven by constant 0
+WARNING: [Synth 8-3917] design top has port HDMI_hdmi_out_OEN[0] driven by constant 1
+WARNING: [Synth 8-3331] design TMDS_Encoder has unconnected port SerialClk
+WARNING: [Synth 8-3331] design TMDS_Encoder has unconnected port aRst
+WARNING: [Synth 8-3331] design rgb2dvi has unconnected port aRst_n
+WARNING: [Synth 8-3331] design dvi2rgb has unconnected port aRst
+WARNING: [Synth 8-3331] design dvi2rgb has unconnected port pRst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 449.711 ; gain = 147.988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 449.711 ; gain = 147.988
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.runs/synth_1/.Xil/Vivado-7332-ALINX000008-PC/dcp1/clk_ref_in_context.xdc] for cell 'clk_refm0'
+Finished Parsing XDC File [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.runs/synth_1/.Xil/Vivado-7332-ALINX000008-PC/dcp1/clk_ref_in_context.xdc] for cell 'clk_refm0'
+Parsing XDC File [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/constrs_1/new/top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/constrs_1/new/top.xdc:10]
+Finished Parsing XDC File [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 790.813 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 790.813 ; gain = 489.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 790.813 ; gain = 489.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.runs/synth_1/.Xil/Vivado-7332-ALINX000008-PC/dcp1/clk_ref_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.runs/synth_1/.Xil/Vivado-7332-ALINX000008-PC/dcp1/clk_ref_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for clk_refm0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 790.813 ; gain = 489.090
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element rDlyRstCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Clocking.vhd:108]
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'pState_reg' in module 'PhaseAlign'
+INFO: [Synth 8-5546] ROM "pCtlTknRst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pCtlTknOvf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pEyeOpenEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pDelayOvf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "pDelayWaitOvf" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "pStateNxt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_INC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_INC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pAligned" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pError" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pFoundJtrFlag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn3Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn2Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn1Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn0Flag" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element pCtlTknCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:148]
+WARNING: [Synth 8-6014] Unused sequential element pEyeOpenCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:187]
+WARNING: [Synth 8-6014] Unused sequential element pWrA_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ChannelBond.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element pRdA_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ChannelBond.vhd:96]
+INFO: [Synth 8-5544] ROM "pAlignRst" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "pC0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pVde" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element rTimeoutCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:149]
+INFO: [Synth 8-5544] ROM "sOut" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element Filter.cntPeriods_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/GlitchFilter.vhd:83]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWI_SlaveCtl'
+INFO: [Synth 8-5544] ROM "shiftBitOut" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "eeprom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:96]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:96]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:96]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:96]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                              000 |                              000
+               staddress |                              001 |                              001
+            stturnaround |                              011 |                              110
+                  stsack |                              010 |                              100
+                  stread |                              111 |                              010
+                  stmack |                              100 |                              101
+                 stwrite |                              110 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWI_SlaveCtl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 790.813 ; gain = 489.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 16    
+	   3 Input      5 Bit       Adders := 9     
+	   4 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 5     
+	   8 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 84    
++---Registers : 
+	               24 Bit    Registers := 3     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 9     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 16    
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 24    
+	                1 Bit    Registers := 131   
++---RAMs : 
+	              320 Bit         RAMs := 3     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 12    
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 7     
+	   5 Input      8 Bit        Muxes := 3     
+	 129 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 3     
+	  23 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 102   
+	  12 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
+Module SyncAsync 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module SyncAsync__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module TMDS_Clocking 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module SyncAsync__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module SyncBase 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SyncBase__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module PhaseAlign 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+	  12 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module ChannelBond 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	              320 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module TMDS_Decoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module ResyncToBUFG 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module GlitchFilter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module TWI_SlaveCtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  23 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 1     
+Module EEPROM_8b 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	 129 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module ClockGen 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module TMDS_Encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 3     
+	   4 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "pTkn1Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn2Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn3Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn0Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pCtlTknRst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pCtlTknOvf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pEyeOpenEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_INC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_INC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pAligned" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pError" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element pCtlTknCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:148]
+WARNING: [Synth 8-6014] Unused sequential element pEyeOpenCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:187]
+WARNING: [Synth 8-6014] Unused sequential element pWrA_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ChannelBond.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element pRdA_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ChannelBond.vhd:96]
+INFO: [Synth 8-5546] ROM "pTkn1Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn2Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn3Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn0Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pCtlTknRst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pCtlTknOvf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pEyeOpenEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_INC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_INC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pAligned" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pError" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element pCtlTknCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:148]
+WARNING: [Synth 8-6014] Unused sequential element pEyeOpenCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:187]
+WARNING: [Synth 8-6014] Unused sequential element pWrA_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ChannelBond.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element pRdA_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ChannelBond.vhd:96]
+INFO: [Synth 8-5546] ROM "pTkn1Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn2Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn3Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pTkn0Flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pCtlTknRst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pCtlTknOvf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pEyeOpenEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_INC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_INC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pIDLY_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pAligned" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pError" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element pCtlTknCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:148]
+WARNING: [Synth 8-6014] Unused sequential element pEyeOpenCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/PhaseAlign.vhd:187]
+WARNING: [Synth 8-6014] Unused sequential element pWrA_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ChannelBond.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element pRdA_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/ChannelBond.vhd:96]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC1_1_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC1_2_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pVde_1_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_1_reg' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pVde_2_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_2_reg' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:150]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC0_1_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:114]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC0_2_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:148]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC1_1_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC1_2_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pVde_1_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_1_reg' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pVde_2_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_2_reg' [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:150]
+WARNING: [Synth 8-6014] Unused sequential element dvi2rgb_m0/DataDecoders[2].DecoderX/pC0_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:267]
+WARNING: [Synth 8-6014] Unused sequential element dvi2rgb_m0/DataDecoders[2].DecoderX/pC1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:268]
+WARNING: [Synth 8-6014] Unused sequential element dvi2rgb_m0/DataDecoders[1].DecoderX/pC0_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:267]
+WARNING: [Synth 8-6014] Unused sequential element dvi2rgb_m0/DataDecoders[1].DecoderX/pC1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:268]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[1].DataEncoder/pC1_1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[1].DataEncoder/pC1_2_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[1].DataEncoder/pVde_1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[1].DataEncoder/pVde_2_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:150]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pC0_1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pC0_2_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:148]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pC1_1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pC1_2_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pVde_1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pVde_2_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Encoder.vhd:150]
+INFO: [Synth 8-5546] ROM "dvi2rgb_m0/DataDecoders[2].DecoderX/pVde" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dvi2rgb_m0/DataDecoders[1].DecoderX/pVde" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dvi2rgb_m0/DataDecoders[0].DecoderX/pC0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dvi2rgb_m0/DataDecoders[0].DecoderX/pVde" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element dvi2rgb_m0/TMDS_ClockingX/rDlyRstCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Clocking.vhd:108]
+WARNING: [Synth 8-6014] Unused sequential element dvi2rgb_m0/DataDecoders[2].DecoderX/rTimeoutCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element dvi2rgb_m0/DataDecoders[1].DecoderX/rTimeoutCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element dvi2rgb_m0/DataDecoders[0].DecoderX/rTimeoutCnt_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/TMDS_Decoder.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SDA/Filter.cntPeriods_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/GlitchFilter.vhd:83]
+WARNING: [Synth 8-6014] Unused sequential element dvi2rgb_m0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SCL/Filter.cntPeriods_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.srcs/sources_1/imports/src/GlitchFilter.vhd:83]
+WARNING: [Synth 8-3917] design top has port HDMI_hdmi_in_OEN[0] driven by constant 0
+WARNING: [Synth 8-3917] design top has port HDMI_hdmi_out_OEN[0] driven by constant 1
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg )
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg )
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[0].DataEncoder/cnt_t_3_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[1].DataEncoder/cnt_t_3_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[2].DataEncoder/cnt_t_3_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (pDataQ_reg[9]) is unused and will be removed from module PhaseAlign__1.
+WARNING: [Synth 8-3332] Sequential element (pDataQ_reg[9]) is unused and will be removed from module PhaseAlign__2.
+WARNING: [Synth 8-3332] Sequential element (pDataQ_reg[9]) is unused and will be removed from module PhaseAlign.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 790.813 ; gain = 489.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++---------------------------------------------------+------------+-----------+----------------------+--------------+
+|Module Name                                        | RTL Object | Inference | Size (Depth x Width) | Primitives   | 
++---------------------------------------------------+------------+-----------+----------------------+--------------+
+|\dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX  | pFIFO_reg  | Implied   | 32 x 10              | RAM32M x 2   | 
+|\dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX  | pFIFO_reg  | Implied   | 32 x 10              | RAM32M x 2   | 
+|\dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX  | pFIFO_reg  | Implied   | 32 x 10              | RAM32M x 2   | 
++---------------------------------------------------+------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_refm0/clk_out1' to pin 'clk_refm0/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 805.422 ; gain = 503.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 828.773 ; gain = 527.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++---------------------------------------------------+------------+-----------+----------------------+--------------+
+|Module Name                                        | RTL Object | Inference | Size (Depth x Width) | Primitives   | 
++---------------------------------------------------+------------+-----------+----------------------+--------------+
+|\dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX  | pFIFO_reg  | Implied   | 32 x 10              | RAM32M x 2   | 
+|\dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX  | pFIFO_reg  | Implied   | 32 x 10              | RAM32M x 2   | 
+|\dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX  | pFIFO_reg  | Implied   | 32 x 10              | RAM32M x 2   | 
++---------------------------------------------------+------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[0]' (FDRE) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[1]' (FDRE) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[2]' (FDRE) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[3]' (FDRE) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[4]' (FDRE) to 'dvi2rgb_m0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[0]' (FDRE) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[1]' (FDRE) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[2]' (FDRE) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[3]' (FDRE) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[4]' (FDRE) to 'dvi2rgb_m0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[0]' (FDRE) to 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[1]' (FDRE) to 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[2]' (FDRE) to 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[3]' (FDRE) to 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[4]' (FDRE) to 'dvi2rgb_m0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[4]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 845.617 ; gain = 543.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 845.617 ; gain = 543.895
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 845.617 ; gain = 543.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 845.617 ; gain = 543.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 845.617 ; gain = 543.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 845.617 ; gain = 543.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 845.617 ; gain = 543.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | rgb2dvi_m0/DataEncoders[0].DataEncoder/pC0_2_reg | 4      | 3     | NO           | NO                 | YES               | 3      | 0       | 
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_ref       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |clk_ref     |     1|
+|2     |BUFG        |     1|
+|3     |BUFIO       |     1|
+|4     |BUFR        |     1|
+|5     |CARRY4      |    18|
+|6     |IDELAYCTRL  |     1|
+|7     |IDELAYE2    |     3|
+|8     |ISERDESE2   |     3|
+|9     |ISERDESE2_1 |     3|
+|10    |LUT1        |    27|
+|11    |LUT2        |    78|
+|12    |LUT3        |   101|
+|13    |LUT4        |    91|
+|14    |LUT5        |   128|
+|15    |LUT6        |   252|
+|16    |MMCME2_ADV  |     2|
+|17    |MUXF7       |    11|
+|18    |OSERDESE2   |     4|
+|19    |OSERDESE2_1 |     4|
+|20    |RAM32M      |     6|
+|21    |SRL16E      |     3|
+|22    |FDCE        |    11|
+|23    |FDPE        |    28|
+|24    |FDRE        |   623|
+|25    |FDSE        |    27|
+|26    |IBUF        |     1|
+|27    |IBUFDS      |     4|
+|28    |IOBUF       |     2|
+|29    |OBUF        |     3|
+|30    |OBUFDS      |     4|
++------+------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-----------------------------+------+
+|      |Instance                             |Module                       |Cells |
++------+-------------------------------------+-----------------------------+------+
+|1     |top                                  |                             |  1443|
+|2     |  dvi2rgb_m0                         |dvi2rgb                      |  1035|
+|3     |    \GenerateBUFG.ResyncToBUFG_X     |ResyncToBUFG                 |    28|
+|4     |    \DataDecoders[0].DecoderX        |TMDS_Decoder                 |   272|
+|5     |      InputSERDES_X                  |InputSERDES                  |     5|
+|6     |      PhaseAlignX                    |PhaseAlign                   |   143|
+|7     |      ChannelBondX                   |ChannelBond                  |    48|
+|8     |      SyncBaseOvf                    |SyncBase_24                  |     8|
+|9     |        SyncAsyncx                   |SyncAsync__parameterized1_27 |     2|
+|10    |      SyncBaseRst                    |SyncBase__parameterized0_25  |     3|
+|11    |        SyncAsyncx                   |SyncAsync_26                 |     2|
+|12    |    \DataDecoders[1].DecoderX        |TMDS_Decoder_7               |   269|
+|13    |      InputSERDES_X                  |InputSERDES__2               |     5|
+|14    |      PhaseAlignX                    |PhaseAlign__2                |   143|
+|15    |      ChannelBondX                   |ChannelBond__2               |    48|
+|16    |      SyncBaseOvf                    |SyncBase_20                  |     8|
+|17    |        SyncAsyncx                   |SyncAsync__parameterized1_23 |     2|
+|18    |      SyncBaseRst                    |SyncBase__parameterized0_21  |     3|
+|19    |        SyncAsyncx                   |SyncAsync_22                 |     2|
+|20    |    \DataDecoders[2].DecoderX        |TMDS_Decoder_8               |   269|
+|21    |      InputSERDES_X                  |InputSERDES__1               |     5|
+|22    |      PhaseAlignX                    |PhaseAlign__1                |   143|
+|23    |      ChannelBondX                   |ChannelBond__1               |    48|
+|24    |      SyncBaseOvf                    |SyncBase                     |     8|
+|25    |        SyncAsyncx                   |SyncAsync__parameterized1    |     2|
+|26    |      SyncBaseRst                    |SyncBase__parameterized0     |     3|
+|27    |        SyncAsyncx                   |SyncAsync_19                 |     2|
+|28    |    \GenerateDDC.DDC_EEPROM          |EEPROM_8b                    |   158|
+|29    |      I2C_SlaveController            |TWI_SlaveCtl                 |   105|
+|30    |        GlitchF_SCL                  |GlitchFilter                 |    12|
+|31    |        GlitchF_SDA                  |GlitchFilter_16              |    12|
+|32    |        SyncSCL                      |SyncAsync_17                 |     3|
+|33    |        SyncSDA                      |SyncAsync_18                 |     3|
+|34    |    LockLostReset                    |ResetBridge_9                |     2|
+|35    |      SyncAsyncx                     |SyncAsync_15                 |     2|
+|36    |    TMDS_ClockingX                   |TMDS_Clocking                |    37|
+|37    |      LockLostReset                  |ResetBridge_10               |     4|
+|38    |        SyncAsyncx                   |SyncAsync_14                 |     3|
+|39    |      MMCM_LockSync                  |SyncAsync__parameterized0_11 |     4|
+|40    |      RdyLostReset                   |ResetBridge_12               |     3|
+|41    |        SyncAsyncx                   |SyncAsync_13                 |     2|
+|42    |  rgb2dvi_m0                         |rgb2dvi                      |   351|
+|43    |    \ClockGenInternal.ClockGenX      |ClockGen                     |    12|
+|44    |      LockLostReset                  |ResetBridge_5                |     3|
+|45    |        SyncAsyncx                   |SyncAsync_6                  |     2|
+|46    |      PLL_LockSyncAsync              |SyncAsync__parameterized0    |     2|
+|47    |    ClockSerializer                  |OutputSERDES                 |     3|
+|48    |    \DataEncoders[0].DataEncoder     |TMDS_Encoder                 |   115|
+|49    |    \DataEncoders[0].DataSerializer  |OutputSERDES_0               |     3|
+|50    |    \DataEncoders[1].DataEncoder     |TMDS_Encoder_1               |   105|
+|51    |    \DataEncoders[1].DataSerializer  |OutputSERDES_2               |     3|
+|52    |    \DataEncoders[2].DataEncoder     |TMDS_Encoder_3               |   105|
+|53    |    \DataEncoders[2].DataSerializer  |OutputSERDES_4               |     3|
+|54    |    LockLostReset                    |ResetBridge                  |     2|
+|55    |      SyncAsyncx                     |SyncAsync                    |     2|
++------+-------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 845.617 ; gain = 543.895
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 845.617 ; gain = 202.793
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 845.617 ; gain = 543.895
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 6 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+193 Infos, 68 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 845.617 ; gain = 555.363
+INFO: [Common 17-1381] The checkpoint 'D:/demo_ax7035/demo_ax7035/08_4_hdmi_loop/hdmi_loop/hdmi_loop.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 845.617 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 20 13:53:47 2018...

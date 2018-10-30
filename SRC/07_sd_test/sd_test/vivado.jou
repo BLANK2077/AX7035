@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Mar 29 11:03:30 2018
+# Process ID: 260
+# Current directory: D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5268 D:\demo_ax7035\demo_ax7035\07_sd_test\sd_test\sd_test.xpr
+# Log file: D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/vivado.log
+# Journal file: D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test\vivado.jou
+#-----------------------------------------------------------
+sstart_guiopen_project D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/sd_test.xpr
+uupdate_compile_order -fileset sources_1open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/sd_test.runs/impl_1/sd_card_test.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/sd_test.runs/impl_1/sd_card_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/sd_test.runs/impl_1/sd_card_test.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/sd_test.runs/impl_1/sd_card_test.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/sd_test.runs/impl_1/sd_card_test.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/sd_test.runs/impl_1/sd_card_test.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"ila_m0"}]]
+save_wave_config {D:/demo_ax7035/demo_ax7035/07_sd_test/sd_test/sd_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jan 17 09:41:25 2018
+# Process ID: 5824
+# Current directory: D:/demo_ax7035/demo_ax7035/audio_record_play/audio_record_play.runs/clk_200M_synth_1
+# Command line: vivado.exe -log clk_200M.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_200M.tcl
+# Log file: D:/demo_ax7035/demo_ax7035/audio_record_play/audio_record_play.runs/clk_200M_synth_1/clk_200M.vds
+# Journal file: D:/demo_ax7035/demo_ax7035/audio_record_play/audio_record_play.runs/clk_200M_synth_1\vivado.jou
+#-----------------------------------------------------------
+source clk_200M.tcl -notrace

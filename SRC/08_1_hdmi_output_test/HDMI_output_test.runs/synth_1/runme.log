@@ -1,0 +1,630 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13632 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 403.285 ; gain = 101.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/sources_1/top.v:27]
+INFO: [Synth 8-638] synthesizing module 'color_bar' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/color_bar.v:33]
+	Parameter H_ACTIVE bound to: 16'b0000011110000000 
+	Parameter H_FP bound to: 16'b0000000001011000 
+	Parameter H_SYNC bound to: 16'b0000000000101100 
+	Parameter H_BP bound to: 16'b0000000010010100 
+	Parameter V_ACTIVE bound to: 16'b0000010000111000 
+	Parameter V_FP bound to: 16'b0000000000000100 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000100100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000100010011000 
+	Parameter V_TOTAL bound to: 16'b0000010001100101 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+INFO: [Synth 8-256] done synthesizing module 'color_bar' (1#1) [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/color_bar.v:33]
+INFO: [Synth 8-638] synthesizing module 'video_pll' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.runs/synth_1/.Xil/Vivado-13368-ALINX000008-PC/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'video_pll' (2#1) [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.runs/synth_1/.Xil/Vivado-13368-ALINX000008-PC/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/rgb2dvi.vhd:89]
+	Parameter kGenerateSerialClk bound to: 0 - type: bool 
+	Parameter kClkPrimitive bound to: MMCM - type: string 
+	Parameter kClkRange bound to: 1 - type: integer 
+	Parameter kRstActiveHigh bound to: 1 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/SyncAsyncReset.vhd:72]
+	Parameter kPolarity bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/SyncAsyncReset.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b1 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/SyncAsync.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (3#1) [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (4#1) [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'OutputSERDES' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/OutputSERDES.vhd:76]
+	Parameter kParallelWidth bound to: 10 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OutputBuffer' to cell 'OBUFDS' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/OutputSERDES.vhd:83]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerMaster' to cell 'OSERDESE2' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/OutputSERDES.vhd:92]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerSlave' to cell 'OSERDESE2' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/OutputSERDES.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'OutputSERDES' (5#1) [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/OutputSERDES.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Encoder' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Encoder' (6#1) [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'rgb2dvi' (7#1) [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/rgb2dvi.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'top' (8#1) [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/sources_1/top.v:27]
+WARNING: [Synth 8-3917] design top has port HDMI_OEN[0] driven by constant 1
+WARNING: [Synth 8-3331] design TMDS_Encoder has unconnected port SerialClk
+WARNING: [Synth 8-3331] design TMDS_Encoder has unconnected port aRst
+WARNING: [Synth 8-3331] design rgb2dvi has unconnected port aRst_n
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 450.793 ; gain = 149.020
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 450.793 ; gain = 149.020
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.runs/synth_1/.Xil/Vivado-13368-ALINX000008-PC/dcp1/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Finished Parsing XDC File [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.runs/synth_1/.Xil/Vivado-13368-ALINX000008-PC/dcp1/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Parsing XDC File [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/constrs_1/new/top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/constrs_1/new/top.xdc:10]
+Finished Parsing XDC File [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 785.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 785.027 ; gain = 483.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 785.027 ; gain = 483.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.runs/synth_1/.Xil/Vivado-13368-ALINX000008-PC/dcp1/video_pll_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.runs/synth_1/.Xil/Vivado-13368-ALINX000008-PC/dcp1/video_pll_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for video_pll_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 785.027 ; gain = 483.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:96]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:96]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:96]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:96]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 785.027 ; gain = 483.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 9     
+	   4 Input      5 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 3     
+	   8 Input      4 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 9     
+	   2 Input      9 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module color_bar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+	  10 Input      1 Bit        Muxes := 1     
+Module SyncAsync 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module TMDS_Encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 3     
+	   4 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC1_1_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC1_2_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pVde_1_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_1_reg' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pVde_2_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_2_reg' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:150]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC0_1_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:114]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC0_2_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:148]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC1_1_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pC1_2_reg' into 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pVde_1_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_1_reg' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pVde_2_reg' into 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pVde_2_reg' [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:150]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[1].DataEncoder/pC1_1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[1].DataEncoder/pC1_2_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[1].DataEncoder/pVde_1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[1].DataEncoder/pVde_2_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:150]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pC0_1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pC0_2_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:148]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pC1_1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pC1_2_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pVde_1_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element rgb2dvi_m0/DataEncoders[2].DataEncoder/pVde_2_reg was removed.  [D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.srcs/sources_1/imports/src/TMDS_Encoder.vhd:150]
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hdmi_color_bar/v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "h_active0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hdmi_color_bar/h_active" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design top has port HDMI_OEN[0] driven by constant 1
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_b_reg_reg[1]' (FDE) to 'hdmi_color_bar/rgb_b_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_b_reg_reg[2]' (FDE) to 'hdmi_color_bar/rgb_b_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_b_reg_reg[3]' (FDE) to 'hdmi_color_bar/rgb_b_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_b_reg_reg[7]' (FDE) to 'hdmi_color_bar/rgb_b_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_b_reg_reg[0]' (FDE) to 'hdmi_color_bar/rgb_b_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_b_reg_reg[4]' (FDE) to 'hdmi_color_bar/rgb_b_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_b_reg_reg[5]' (FDE) to 'hdmi_color_bar/rgb_b_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_g_reg_reg[1]' (FDE) to 'hdmi_color_bar/rgb_g_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_g_reg_reg[2]' (FDE) to 'hdmi_color_bar/rgb_g_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_g_reg_reg[3]' (FDE) to 'hdmi_color_bar/rgb_g_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_g_reg_reg[7]' (FDE) to 'hdmi_color_bar/rgb_g_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_g_reg_reg[0]' (FDE) to 'hdmi_color_bar/rgb_g_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_g_reg_reg[4]' (FDE) to 'hdmi_color_bar/rgb_g_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_g_reg_reg[5]' (FDE) to 'hdmi_color_bar/rgb_g_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_r_reg_reg[1]' (FDE) to 'hdmi_color_bar/rgb_r_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_r_reg_reg[2]' (FDE) to 'hdmi_color_bar/rgb_r_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_r_reg_reg[3]' (FDE) to 'hdmi_color_bar/rgb_r_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_r_reg_reg[7]' (FDE) to 'hdmi_color_bar/rgb_r_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_r_reg_reg[0]' (FDE) to 'hdmi_color_bar/rgb_r_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_r_reg_reg[4]' (FDE) to 'hdmi_color_bar/rgb_r_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'hdmi_color_bar/rgb_r_reg_reg[5]' (FDE) to 'hdmi_color_bar/rgb_r_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[7]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[6]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[3]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[4]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[5]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[7]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[6]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[3]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[4]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[5]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[7]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[6]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[3]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[4]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[5]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg )
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_2_reg' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1d_1_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/pDataOut_1_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1d_1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1d_1_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1d_1_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1d_1_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pDataOut_1_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1d_1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1d_1_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1d_1_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/pDataOut_1_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1d_1_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[7]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[6]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[5]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[4]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[3]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[7]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[6]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[5]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[4]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[3]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[7]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[6]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[5]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[4]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[3]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg )
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n0q_m_2_reg[3]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[8]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n0q_m_2_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/pC0_1_reg' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n0q_m_2_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n0q_m_2_reg[3]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[8]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n0q_m_2_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n0q_m_2_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[3]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[8]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n0q_m_2_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1q_m_2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1q_m_2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1q_m_2_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[0].DataEncoder/n1q_m_2_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1q_m_2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1q_m_2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1q_m_2_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[1].DataEncoder/n1q_m_2_reg[2]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[0]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[1]' (FD) to 'rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[0].DataEncoder/cnt_t_3_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[1].DataEncoder/cnt_t_3_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[2].DataEncoder/cnt_t_3_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rgb2dvi_m0/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 785.027 ; gain = 483.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll_m0/clk_out1' to pin 'video_pll_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_pll_m0/clk_out2' to pin 'video_pll_m0/bbstub_clk_out2/O'
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 786.566 ; gain = 484.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 806.875 ; gain = 505.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 809.844 ; gain = 508.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 809.844 ; gain = 508.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 809.844 ; gain = 508.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 809.844 ; gain = 508.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 809.844 ; gain = 508.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 809.844 ; gain = 508.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 809.844 ; gain = 508.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | rgb2dvi_m0/DataEncoders[0].DataEncoder/pC0_2_reg | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |video_pll     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |video_pll   |     1|
+|2     |CARRY4      |     9|
+|3     |LUT1        |    13|
+|4     |LUT2        |     4|
+|5     |LUT3        |     2|
+|6     |LUT4        |     8|
+|7     |LUT5        |    10|
+|8     |LUT6        |    34|
+|9     |OSERDESE2   |     4|
+|10    |OSERDESE2_1 |     4|
+|11    |SRL16E      |     3|
+|12    |FDPE        |     2|
+|13    |FDRE        |    70|
+|14    |FDSE        |     9|
+|15    |OBUF        |     1|
+|16    |OBUFDS      |     4|
++------+------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+---------------+------+
+|      |Instance                             |Module         |Cells |
++------+-------------------------------------+---------------+------+
+|1     |top                                  |               |   180|
+|2     |  hdmi_color_bar                     |color_bar      |    95|
+|3     |  rgb2dvi_m0                         |rgb2dvi        |    81|
+|4     |    ClockSerializer                  |OutputSERDES   |     3|
+|5     |    \DataEncoders[0].DataEncoder     |TMDS_Encoder   |    30|
+|6     |    \DataEncoders[0].DataSerializer  |OutputSERDES_0 |     3|
+|7     |    \DataEncoders[1].DataEncoder     |TMDS_Encoder_1 |    18|
+|8     |    \DataEncoders[1].DataSerializer  |OutputSERDES_2 |     3|
+|9     |    \DataEncoders[2].DataEncoder     |TMDS_Encoder_3 |    18|
+|10    |    \DataEncoders[2].DataSerializer  |OutputSERDES_4 |     3|
+|11    |    LockLostReset                    |ResetBridge    |     3|
+|12    |      SyncAsyncx                     |SyncAsync      |     2|
++------+-------------------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 809.844 ; gain = 508.070
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 809.844 ; gain = 173.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 809.844 ; gain = 508.070
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+162 Infos, 21 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 809.844 ; gain = 519.727
+INFO: [Common 17-1381] The checkpoint 'D:/demo_ax7035/demo_ax7035/08_1_hdmi_output_test/HDMI_output_test.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 809.844 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 19 20:17:03 2018...
